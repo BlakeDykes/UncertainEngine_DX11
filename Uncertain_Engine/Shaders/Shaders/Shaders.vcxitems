@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{35f0d0af-40b1-48ee-854a-dc5dd539b62c}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\BlendedTile.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\BlendedTile_1_3_1.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\ColorLight.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\ColorLight_1_3_1.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\ColorSelected.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\ColorSelected3D.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\ColorSelected3DOptimized.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\MagnitudeLight.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\SimpleColor.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\SimpleColor3D.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\SimpleColorPlus.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\SimpleTexture.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\SpectrumLight.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\TextureLight.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)..\TextureLight_1_3_1.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\FogModel.hlsli" />
+    <None Include="$(MSBuildThisFileDirectory)..\PhongModel.hlsli" />
+    <None Include="$(MSBuildThisFileDirectory)..\SpectralModel.hlsli" />
+  </ItemGroup>
+</Project>

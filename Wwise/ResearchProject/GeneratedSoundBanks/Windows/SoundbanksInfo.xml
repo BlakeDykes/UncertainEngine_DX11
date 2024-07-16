@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A9A37A89-EA41-C90B-5782-CD4130BE99BA}">
+			<ShortName>Init</ShortName>
+			<Path>1355168291.bnk</Path>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2886947471" Name="SA_Default" LibName="SpectralAnalysis" LibId="694289411"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="1973600711" Name="Environmental"/>
+				<Bus Id="2101962433" Name="Non-Environmental"/>
+				<Bus Id="2165403525" Name="Modular"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3850444438" Name="Percussion"/>
+				<Bus Id="3991942870" Name="Music">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2886947471"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="659738430" Name="Percussion_LowPass"/>
+				<GameParameter Id="1656280998" Name="RPM_FA_SSGrain"/>
+				<GameParameter Id="1791284502" Name="Proximity_FA_SSGrain"/>
+				<GameParameter Id="2317409760" Name="Instrument_FA_SSGrain"/>
+				<GameParameter Id="2428833394" Name="Simulation_FA_SSGrain"/>
+				<GameParameter Id="2481728872" Name="Immersion_FA_SSGrain"/>
+				<GameParameter Id="2715217995" Name="Density_FA_SSGrain"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2165403525" Name="Modular">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3205567180" Name="EG_Now"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3850444438" Name="Percussion">
+					<States>
+						<State Id="209137191" Name="Action"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1107723959" Name="Ominous"/>
+						<State Id="4294400669" Name="Chill"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+		<SoundBank Id="2165403525" Type="User" Language="SFX" Hash="{902CA8A6-4EFB-8C7A-9071-C68DD8D893B3}">
+			<ShortName>Modular</ShortName>
+			<Path>2165403525.bnk</Path>
+			<Media>
+				<File Id="625022454" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EshanGelsi_Now_1.wav</ShortName>
+					<CachePath>SFX/EshanGelsi_Now_1_B9170B35.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2974398838" Name="Modular_Play">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2165403525" Id="3205567180"/>
+							<MediaRefs>
+								<MediaRef Id="625022454"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2165403525" Id="0"/>
+							<MediaRefs>
+								<MediaRef Id="625022454"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3746512648" Name="Modular_Stop"/>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="2165403525" Name="Modular">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3205567180" Name="EG_Now"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3850444438" Type="User" Language="SFX" Hash="{30D8457C-173A-3289-B41A-2668CEEC682B}">
+			<ShortName>Percussion</ShortName>
+			<Path>3850444438.bnk</Path>
+			<Media>
+				<File Id="205256168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SnackPack_4.wav</ShortName>
+					<CachePath>SFX/SnackPack_4_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="669448490" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SnackPack_5.wav</ShortName>
+					<CachePath>SFX/SnackPack_5_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="719428485" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SnackPack_1.wav</ShortName>
+					<CachePath>SFX/SnackPack_1_B9170B35.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2717275287" Name="Percussion_Play">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3850444438" Id="0"/>
+							<MediaRefs>
+								<MediaRef Id="719428485"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3850444438" Id="209137191"/>
+							<MediaRefs>
+								<MediaRef Id="719428485"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3850444438" Id="4294400669"/>
+							<MediaRefs>
+								<MediaRef Id="205256168"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3850444438" Id="1107723959"/>
+							<MediaRefs>
+								<MediaRef Id="669448490"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1405717701" Name="Percussion_Stop"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="659738430" Name="Percussion_LowPass"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3850444438" Name="Percussion">
+					<States>
+						<State Id="209137191" Name="Action"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1107723959" Name="Ominous"/>
+						<State Id="4294400669" Name="Chill"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{9EFA57B8-B141-1E28-AE9F-E6E6AEEA0598}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Converter", "Converter\Converter.vcxproj", "{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77876AA3-CD2E-4F33-9CF4-A75D4E720479} = {77876AA3-CD2E-4F33-9CF4-A75D4E720479}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "File", "..\File\File.vcxproj", "{F98902EE-6F29-479B-9A05-B2ED999A06D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "..\Math_3.0\Math.vcxproj", "{D999076E-F08B-48FC-B732-E43E13041A07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProtoBuff", "..\ProtoBuff\ProtoBuff.vcxitems", "{978E63F0-9D27-4D47-880B-75C826B3032A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Collections", "..\Collections\Collections.vcxproj", "{77876AA3-CD2E-4F33-9CF4-A75D4E720479}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TinyGLTF", "..\TinyGLTF\TinyGLTF\TinyGLTF.vcxitems", "{3A1C0C7C-3CAC-4CD5-B070-0D2E1FE6B22D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}.Debug|x86.ActiveCfg = Debug|Win32
+		{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}.Debug|x86.Build.0 = Debug|Win32
+		{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}.Release|x86.ActiveCfg = Release|Win32
+		{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}.Release|x86.Build.0 = Release|Win32
+		{F98902EE-6F29-479B-9A05-B2ED999A06D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{F98902EE-6F29-479B-9A05-B2ED999A06D6}.Debug|x86.Build.0 = Debug|Win32
+		{F98902EE-6F29-479B-9A05-B2ED999A06D6}.Release|x86.ActiveCfg = Release|Win32
+		{F98902EE-6F29-479B-9A05-B2ED999A06D6}.Release|x86.Build.0 = Release|Win32
+		{D999076E-F08B-48FC-B732-E43E13041A07}.Debug|x86.ActiveCfg = Debug|Win32
+		{D999076E-F08B-48FC-B732-E43E13041A07}.Debug|x86.Build.0 = Debug|Win32
+		{D999076E-F08B-48FC-B732-E43E13041A07}.Release|x86.ActiveCfg = Release|Win32
+		{D999076E-F08B-48FC-B732-E43E13041A07}.Release|x86.Build.0 = Release|Win32
+		{77876AA3-CD2E-4F33-9CF4-A75D4E720479}.Debug|x86.ActiveCfg = Debug|Win32
+		{77876AA3-CD2E-4F33-9CF4-A75D4E720479}.Debug|x86.Build.0 = Debug|Win32
+		{77876AA3-CD2E-4F33-9CF4-A75D4E720479}.Release|x86.ActiveCfg = Release|Win32
+		{77876AA3-CD2E-4F33-9CF4-A75D4E720479}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F904E58-7466-4ADD-86F2-CDA47824689D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\TinyGLTF\TinyGLTF\TinyGLTF.vcxitems*{3a1c0c7c-3cac-4cd5-b070-0d2e1fe6b22d}*SharedItemsImports = 9
+		..\ProtoBuff\ProtoBuff.vcxitems*{978e63f0-9d27-4d47-880b-75c826b3032a}*SharedItemsImports = 9
+		..\ProtoBuff\ProtoBuff.vcxitems*{ed602e5d-031c-4af8-b6a6-4b34e0073b27}*SharedItemsImports = 4
+		..\TinyGLTF\TinyGLTF.vcxitems*{ed602e5d-031c-4af8-b6a6-4b34e0073b27}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

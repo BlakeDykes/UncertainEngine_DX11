@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iterator">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="~Iterator" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAECAAAIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Iterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLinkIterator">
+    <Position X="2.5" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="~DLinkIterator" Hidden="true" />
+      <Method Name="DLinkIterator" Hidden="true" />
+      <Method Name="privClear" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAECAAACAAhQAAAEAAAgAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\DLinkIterator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManBase">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="~ManBase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CIAAAIAFAAACgCgAAgAAIgQAUAAIAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>include\ManBase.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poReserve" />
+      <Field Name="poActive" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ListBase">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="~ListBase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAs=</HashCode>
+      <FileName>include\ListBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLinkMan">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAAAAAAAAAAAABgAAAAAABAACAAAAAAAAAAs=</HashCode>
+      <FileName>include\DLinkMan.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poIterator" />
+      <Field Name="poHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DLink">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="~DLink" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAgAAAAIAAQAAAAABAAIBBBAA=</HashCode>
+      <FileName>include\DLink.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

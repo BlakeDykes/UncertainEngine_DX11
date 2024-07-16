@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AE46E0CE-6940-42AA-8403-E47050AA1C61}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{AE46E0CE-6940-42AA-8403-E47050AA1C61}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Percussion" ID="{CB431B7C-F293-430D-B9D8-D59ACD3215DE}">
+					<ChildrenList>
+						<State Name="None" ID="{29F0D906-16E6-4F83-AEBC-7ABF003B0BD9}"/>
+						<State Name="Chill" ID="{39CD1FA6-001C-4B47-8A0F-CD543963890B}"/>
+						<State Name="Ominous" ID="{EE529FE6-6A0A-4411-847C-3220920EC0D2}"/>
+						<State Name="Action" ID="{D3B41D1E-E007-44CA-91B5-BD76FF9F556A}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Modular" ID="{4ED40686-02A1-474C-A054-A68497348769}">
+					<ChildrenList>
+						<State Name="None" ID="{EFA9AEEF-63AC-4962-9FF2-0D8BCAED98B4}"/>
+						<State Name="EG_Now" ID="{7E9ADB5B-74B9-4933-8A2F-9EE005FF15C6}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

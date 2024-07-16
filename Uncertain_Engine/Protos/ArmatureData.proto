@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+message ArmatureData_proto
+{
+	optional bytes	name	   = 1;
+	optional uint32 jointCount = 2;
+	optional uint32 jointDepth = 3;
+	optional bytes	jointTable = 4;
+}

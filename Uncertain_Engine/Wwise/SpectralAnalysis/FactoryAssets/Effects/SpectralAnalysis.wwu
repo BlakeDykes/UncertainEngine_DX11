@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FEB65455-A8D6-4348-B9AF-DC02D660DCB7}" SchemaVersion="119">
+	<Effects>
+		<WorkUnit Name="SpectralAnalysis" ID="{FEB65455-A8D6-4348-B9AF-DC02D660DCB7}" PersistMode="Standalone"/>
+	</Effects>
+</WwiseDocument>

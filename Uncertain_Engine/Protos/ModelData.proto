@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "MeshData.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+message ModelData_proto
+{
+	optional bytes	pModelName = 1;
+	optional uint32 meshCount = 3;
+	repeated MeshData_proto	meshes = 4;
+}

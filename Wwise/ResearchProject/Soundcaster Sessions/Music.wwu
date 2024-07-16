@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1885BC3C-8BBD-4D35-8811-3A2F413ACAF2}" SchemaVersion="119">
+	<SoundcasterSessions>
+		<WorkUnit Name="Music" ID="{1885BC3C-8BBD-4D35-8811-3A2F413ACAF2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Percussion" ID="{BF36ED35-117A-4DB2-B3DF-2F4940F075D5}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Percussion_LowPass" ID="{9DE76CC9-7183-4796-8F4B-4134A5A88E62}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{29F0D906-16E6-4F83-AEBC-7ABF003B0BD9}"/>
+						<CurrentStateRef Name="None" ID="{EFA9AEEF-63AC-4962-9FF2-0D8BCAED98B4}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

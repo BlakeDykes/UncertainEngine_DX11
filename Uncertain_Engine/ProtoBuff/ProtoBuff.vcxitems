@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{978e63f0-9d27-4d47-880b-75c826b3032a}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\any.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\arena.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\arenastring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\arenaz_sampler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\arena_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\arena_test_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\annotation_test_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\code_generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\command_line_interface.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\cpp_generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\enum.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\enum_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\extension.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\file.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\helpers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\map_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\message.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\message_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\message_layout_helper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\names.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\options.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\padding_optimizer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\parse_function_generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\primitive_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\service.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\string_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\cpp\unittest.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\importer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\mock_code_generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\package_info.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\parser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\plugin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\scc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\subprocess.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\compiler\zip_writer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\descriptor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\descriptor_database.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\dynamic_message.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\endian.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\explicitly_constructed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\extension_set.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\extension_set_inl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\field_access_listener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_enum_reflection.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_enum_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_message_bases.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_message_reflection.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_message_tctable_decl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_message_tctable_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\generated_message_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\has_bits.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\implicit_weak_message.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\inlined_string_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\coded_stream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\gzip_stream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\io_win32.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\package_info.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\printer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\strtod.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\tokenizer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\zero_copy_stream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\zero_copy_stream_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\io\zero_copy_stream_impl_lite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_entry.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_entry_lite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_field_inl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_field_lite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_lite_test_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_test_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_test_util_impl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\map_type_handler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\message.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\message_lite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\metadata.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\metadata_lite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\package_info.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\parse_context.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\reflection.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\reflection_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\reflection_ops.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\reflection_tester.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\repeated_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\repeated_ptr_field.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\service.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\string_member_robber.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\bytestream.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\callback.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\casts.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\hash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\int128.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\logging.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\macros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\map_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\mathutil.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\once.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\platform_macros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\status.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\statusor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\status_macros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\stl_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\stringpiece.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\stringprintf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\strutil.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\substitute.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\template_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\stubs\time.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\test_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\test_util2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\test_util_lite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\text_format.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\unknown_field_set.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\delimited_message_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\field_comparator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\field_mask_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\constants.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\datapiece.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\default_value_objectwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\error_listener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\expecting_objectwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\field_mask_utility.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\json_escaping.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\json_objectwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\json_stream_parser.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\location_tracker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\mock_error_listener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\object_location_tracker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\object_source.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\object_writer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\protostream_objectsource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\protostream_objectwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\proto_writer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\structured_objectwriter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\type_info.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\type_info_test_helper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\internal\utility.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\json_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\message_differencer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\package_info.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\time_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\type_resolver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\util\type_resolver_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\wire_format.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)google\protobuf\wire_format_lite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\map_test.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\map_test_util.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\message_unittest.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\port_def.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\port_undef.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\proto3_lite_unittest.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\test_util.inc" />
+    <None Include="$(MSBuildThisFileDirectory)google\protobuf\wire_format_unittest.inc" />
+  </ItemGroup>
+</Project>

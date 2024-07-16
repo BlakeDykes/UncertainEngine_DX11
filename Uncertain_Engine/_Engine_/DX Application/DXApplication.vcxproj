@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>DX Application</ProjectName>
+    <ProjectGuid>{06EDC280-1187-4614-A248-E640C095FA6B}</ProjectGuid>
+    <RootNamespace>Tutorial01</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BOOSTER;PROFILE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";USE_THREAD_FRAMEWORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Time\include;$(SolutionDir)..\Math_3.0\include;$(SolutionDir)..\Framework;$(SolutionDir)dist\File\include;$(SolutionDir)..\Thread\include;$(SolutionDir)..\Collections\include;$(SolutionDir)..\Protos;$(SolutionDir)..\Wwise\include;$(SolutionDir)..\..\Wwise\ResearchProject;$(SolutionDir)..\Pugixml\src;$(SolutionDir)..\File\include;$(SolutionDir)include;$(SolutionDir)src;$(SolutionDir)src\Audio;$(SolutionDir)..\Wwise\SpectralAnalysis;$(SolutionDir)..\Wwise\SpectralAnalysis\SoundEnginePlugin;$(SolutionDir)include\Wwise;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>Framework.h;ThreadFramework.h;_Uncertain.h;EngineNames.h; _def_SA.h</ForcedIncludeFiles>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;comctl32.lib;dinput8.lib;Winmm.lib;dsound.lib;dxguid.lib;ws2_32.lib;xinput.lib;DirectXTex_X86$(Configuration).lib;File_X86$(Configuration).lib;Math_X86$(Configuration).lib;Thread_X86$(Configuration).lib;Collections_X86$(Configuration).lib;Time_X86$(Configuration).lib;pugixml_X86$(Configuration).lib;SpectralAnalysisFX_X86$(Configuration).lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkMemoryMgr.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkMusicEngine.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkSoundEngine.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkSpatialAudio.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkStreamMgr.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\CommunicationCentral.lib;$(CoreLibraryDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(SolutionDir)include;$(SolutionDir)$(Configuration);$(SolutionDir)..\Wwise\$(Platform)_vc170\Profile(StaticCRT)\lib</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <FxCompile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <VariableName>
+      </VariableName>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;comctl32.lib;dinput8.lib;Winmm.lib;dsound.lib;dxguid.lib;ws2_32.lib;xinput.lib;DirectXTex_X86$(Configuration).lib;File_X86$(Configuration).lib;Math_X86$(Configuration).lib;Thread_X86$(Configuration).lib;Collections_X86$(Configuration).lib;Time_X86$(Configuration).lib;pugixml_X86$(Configuration).lib;SpectralAnalysisFX_X86$(Configuration).lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkMemoryMgr.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkMusicEngine.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkSoundEngine.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkSpatialAudio.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkStreamMgr.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\CommunicationCentral.lib;$(CoreLibraryDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;comctl32.lib;dinput8.lib;Winmm.lib;dsound.lib;dxguid.lib;ws2_32.lib;xinput.lib;DirectXTex_X86$(Configuration).lib;File_X86$(Configuration).lib;Math_X86$(Configuration).lib;Thread_X86$(Configuration).lib;Collections_X86$(Configuration).lib;Time_X86$(Configuration).lib;pugixml_X86$(Configuration).lib;SpectralAnalysisFX_X86$(Configuration).lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkMemoryMgr.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkMusicEngine.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkSoundEngine.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkSpatialAudio.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\AkStreamMgr.lib;$(SolutionDir)..\Wwise\$(Platform)_vc170\$(Configuration)(StaticCRT)\lib\CommunicationCentral.lib;$(CoreLibraryDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>PerMonitorHighDPIAware</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileLocationBase.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackage.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLUT.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkGeneratedSoundBanksResolver.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkJobWorkerMgr.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkMultipleFileLocation.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkPlatformProfilerHookStubs.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkDefaultIOHookDeferred.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkPlatformProfilerHooks.cpp" />
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\stdafx.cpp" />
+    <ClCompile Include="..\src\Audio\AC_CB.cpp" />
+    <ClCompile Include="..\src\Audio\AC_PostEvent.cpp" />
+    <ClCompile Include="..\src\Audio\AC_RegisterObject.cpp" />
+    <ClCompile Include="..\src\Audio\AC_SendPluginGameData.cpp" />
+    <ClCompile Include="..\src\Audio\AC_SetDefaultListener.cpp" />
+    <ClCompile Include="..\src\Audio\AC_SetListener.cpp" />
+    <ClCompile Include="..\src\Audio\AC_SetState.cpp" />
+    <ClCompile Include="..\src\Audio\AC_UnregisterObject.cpp" />
+    <ClCompile Include="..\src\Audio\AudioManager.cpp" />
+    <ClCompile Include="..\src\Audio\AudioNode.cpp" />
+    <ClCompile Include="..\src\Audio\AudioObject.cpp" />
+    <ClCompile Include="..\src\Audio\AudioObjectManager.cpp" />
+    <ClCompile Include="..\src\Audio\AudioPluginInfo.cpp" />
+    <ClCompile Include="..\src\Audio\AudioPoster.cpp" />
+    <ClCompile Include="..\src\Audio\Model_AudioSpectrum.cpp" />
+    <ClCompile Include="..\src\Audio\RTPCC_Base.cpp" />
+    <ClCompile Include="..\src\Audio\RTPCC_LightParam.cpp" />
+    <ClCompile Include="..\src\Audio\RTPCLerp.cpp" />
+    <ClCompile Include="..\src\Audio\RTPCManager.cpp" />
+    <ClCompile Include="..\src\Audio\RTPCObject.cpp" />
+    <ClCompile Include="..\src\Audio\SO_MagnitudeLight.cpp" />
+    <ClCompile Include="..\src\Audio\SpectralRequest_CBuffer.cpp" />
+    <ClCompile Include="..\src\Buffer.cpp" />
+    <ClCompile Include="..\src\EngineNames.cpp" />
+    <ClCompile Include="..\src\FC_LoadFiles.cpp" />
+    <ClCompile Include="..\src\FileCoordinator.cpp" />
+    <ClCompile Include="..\src\FileThread.cpp" />
+    <ClCompile Include="..\src\GameObjectManager.cpp" />
+    <ClCompile Include="..\src\GameObj_Audio.cpp" />
+    <ClCompile Include="..\src\LightParamController.cpp" />
+    <ClCompile Include="..\src\ModelNode.cpp" />
+    <ClCompile Include="..\src\ShaderNode.cpp" />
+    <ClCompile Include="..\src\SO_BlendedTile_1_3_1.cpp" />
+    <ClCompile Include="..\src\CamController.cpp" />
+    <ClCompile Include="..\src\Camera.cpp" />
+    <ClCompile Include="..\src\CBuffers.cpp" />
+    <ClCompile Include="..\src\d3dUtil.cpp" />
+    <ClCompile Include="..\src\DeltaMod.cpp" />
+    <ClCompile Include="..\src\DXApp.cpp" />
+    <ClCompile Include="..\src\GameObj_Root.cpp" />
+    <ClCompile Include="..\src\GameObj_Light.cpp" />
+    <ClCompile Include="..\src\GraphicsObject.cpp" />
+    <ClCompile Include="..\src\GraphicsObjectManager.cpp" />
+    <ClCompile Include="..\src\LC_DeltaPos.cpp" />
+    <ClCompile Include="..\src\LightController.cpp" />
+    <ClCompile Include="..\src\LightParams.cpp" />
+    <ClCompile Include="..\src\Mesh.cpp" />
+    <ClCompile Include="..\src\ReflectionManager.cpp" />
+    <ClCompile Include="..\src\ReflectionPlane.cpp" />
+    <ClCompile Include="..\src\SceneLightManager.cpp" />
+    <ClCompile Include="..\src\MaterialManager.cpp" />
+    <ClCompile Include="..\src\MaterialObject.cpp" />
+    <ClCompile Include="..\src\Model_FlatPlane.cpp" />
+    <ClCompile Include="..\src\GameObject.cpp" />
+    <ClCompile Include="..\src\GameTimer.cpp" />
+    <ClCompile Include="..\src\Model.cpp" />
+    <ClCompile Include="..\src\ModelManager.cpp" />
+    <ClCompile Include="..\src\ModelTools.cpp" />
+    <ClCompile Include="..\src\Model_Skybox.cpp" />
+    <ClCompile Include="..\src\Model_Terrain.cpp" />
+    <ClCompile Include="..\src\SceneLightObject.cpp" />
+    <ClCompile Include="..\src\ShaderManager.cpp" />
+    <ClCompile Include="..\src\SO_BlendedTile.cpp" />
+    <ClCompile Include="..\src\SO_ColorLight.cpp" />
+    <ClCompile Include="..\src\SO_ColorLight_1_3_1.cpp" />
+    <ClCompile Include="..\src\SO_ColorSelected3D.cpp" />
+    <ClCompile Include="..\src\SO_NULL.cpp" />
+    <ClCompile Include="..\src\SO_SimpleColor3D.cpp" />
+    <ClCompile Include="..\src\SO_SimpleTexture.cpp" />
+    <ClCompile Include="..\src\SO_SpectrumLight.cpp" />
+    <ClCompile Include="..\src\SO_TextureLight.cpp" />
+    <ClCompile Include="..\src\SO_TextureLight_1_3_1.cpp" />
+    <ClCompile Include="..\src\TextureManager.cpp" />
+    <ClCompile Include="..\src\TextureNode.cpp" />
+    <ClCompile Include="..\src\TextureObject.cpp" />
+    <ClCompile Include="..\src\TextureObject_Multi.cpp" />
+    <ClCompile Include="..\src\_ManagerWrapper.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="ShaderObject.cpp" />
+    <ClCompile Include="_InputLayouts.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Framework\Framework.h" />
+    <ClInclude Include="..\..\Framework\ProjectSettings.h" />
+    <ClInclude Include="..\..\Framework\ThreadFramework.h" />
+    <ClInclude Include="..\include\DirectXTex.h" />
+    <ClInclude Include="..\include\EngineNames.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileHelpersBase.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileLocationBase.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackage.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIO.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIODeferred.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLUT.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkGeneratedSoundBanksResolver.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkJobWorkerMgr.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkMultipleFileLocation.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkPlatformProfilerHooks.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkDefaultIOHookDeferred.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkFileHelpers.h" />
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Win32\stdafx.h" />
+    <ClInclude Include="..\include\_Uncertain.h" />
+    <ClInclude Include="..\src\Audio\AC_CB.h" />
+    <ClInclude Include="..\src\Audio\AC_PostEvent.h" />
+    <ClInclude Include="..\src\Audio\AC_RegisterObject.h" />
+    <ClInclude Include="..\src\Audio\AC_SendPluginGameData.h" />
+    <ClInclude Include="..\src\Audio\AC_SetDefaultListener.h" />
+    <ClInclude Include="..\src\Audio\AC_SetListener.h" />
+    <ClInclude Include="..\src\Audio\AC_SetState.h" />
+    <ClInclude Include="..\src\Audio\AC_UnregisterObject.h" />
+    <ClInclude Include="..\src\Audio\AC_CB_DAO.h" />
+    <ClInclude Include="..\src\Audio\AudioManager.h" />
+    <ClInclude Include="..\src\Audio\AudioNode.h" />
+    <ClInclude Include="..\src\Audio\AudioObject.h" />
+    <ClInclude Include="..\src\Audio\AudioObjectManager.h" />
+    <ClInclude Include="..\src\Audio\AudioPluginInfo.h" />
+    <ClInclude Include="..\src\Audio\AudioPoster.h" />
+    <ClInclude Include="..\src\Audio\Model_AudioSpectrum.h" />
+    <ClInclude Include="..\src\Audio\RTPCC_Base.h" />
+    <ClInclude Include="..\src\Audio\RTPCC_LightParam.h" />
+    <ClInclude Include="..\src\Audio\RTPCLerp.h" />
+    <ClInclude Include="..\src\Audio\RTPCObject.h" />
+    <ClInclude Include="..\src\Audio\RTPCManager.h" />
+    <ClInclude Include="..\src\Audio\SO_MagnitudeLight.h" />
+    <ClInclude Include="..\src\Audio\SpectralRequest_CBuffer.h" />
+    <ClInclude Include="..\src\Audio\_AudioCommandWrapper.h" />
+    <ClInclude Include="..\src\Audio\_AudioThreadCommandWrapper.h" />
+    <ClInclude Include="..\src\Audio\_RTPCCWrapper.h" />
+    <ClInclude Include="..\src\Buffer.h" />
+    <ClInclude Include="..\src\FC_LoadFiles.h" />
+    <ClInclude Include="..\src\FileCoordinator.h" />
+    <ClInclude Include="..\src\FileThread.h" />
+    <ClInclude Include="..\src\GameObjectManager.h" />
+    <ClInclude Include="..\src\GameObj_Audio.h" />
+    <ClInclude Include="..\src\LightParamController.h" />
+    <ClInclude Include="..\src\ModelNode.h" />
+    <ClInclude Include="..\src\ShaderNode.h" />
+    <ClInclude Include="..\src\SO_BlendedTile_1_3_1.h" />
+    <ClInclude Include="..\src\CamController.h" />
+    <ClInclude Include="..\src\Camera.h" />
+    <ClInclude Include="..\src\CBuffers.h" />
+    <ClInclude Include="..\src\d3dUtil.h" />
+    <ClInclude Include="..\src\DeltaMod.h" />
+    <ClInclude Include="..\src\DXApp.h" />
+    <ClInclude Include="..\src\GameObj_Root.h" />
+    <ClInclude Include="..\src\GameObj_Light.h" />
+    <ClInclude Include="..\src\GraphicsObject.h" />
+    <ClInclude Include="..\src\GraphicsObjectManager.h" />
+    <ClInclude Include="..\src\LC_Debug.h" />
+    <ClInclude Include="..\src\LC_DeltaPos.h" />
+    <ClInclude Include="..\src\LightController.h" />
+    <ClInclude Include="..\src\LightParams.h" />
+    <ClInclude Include="..\src\Mesh.h" />
+    <ClInclude Include="..\src\Model_NULL.h" />
+    <ClInclude Include="..\src\ReflectionManager.h" />
+    <ClInclude Include="..\src\ReflectionPlane.h" />
+    <ClInclude Include="..\src\SO_BlendedTile.h" />
+    <ClInclude Include="..\src\SO_ColorLight_1_3_1.h" />
+    <ClInclude Include="..\src\SO_ColorSelected3D.h" />
+    <ClInclude Include="..\src\SO_NULL.h" />
+    <ClInclude Include="..\src\SO_SpectrumLight.h" />
+    <ClInclude Include="..\src\SO_TextureLight.h" />
+    <ClInclude Include="..\src\SO_TextureLight_1_3_1.h" />
+    <ClInclude Include="..\src\TextureNode.h" />
+    <ClInclude Include="..\src\TextureObject_Multi.h" />
+    <ClInclude Include="..\src\Utils.h" />
+    <ClInclude Include="..\src\_GameObjectWrapper.h" />
+    <ClInclude Include="..\src\_Helpers.h" />
+    <ClInclude Include="..\src\_InputLayouts.h" />
+    <ClInclude Include="..\src\_LightCommandWrapper.h" />
+    <ClInclude Include="..\src\_ManagerWrapper.h" />
+    <ClInclude Include="..\src\SceneLightManager.h" />
+    <ClInclude Include="..\src\SceneLightObject.h" />
+    <ClInclude Include="..\src\MaterialManager.h" />
+    <ClInclude Include="..\src\MaterialObject.h" />
+    <ClInclude Include="..\src\MaterialObject_NULL.h" />
+    <ClInclude Include="..\src\Model_FlatPlane.h" />
+    <ClInclude Include="..\src\GameObject.h" />
+    <ClInclude Include="..\src\GameTimer.h" />
+    <ClInclude Include="..\src\MemTracker\Framework.h" />
+    <ClInclude Include="..\src\MemTracker\ProjectSettings.h" />
+    <ClInclude Include="..\src\Model.h" />
+    <ClInclude Include="..\src\ModelManager.h" />
+    <ClInclude Include="..\src\ModelTools.h" />
+    <ClInclude Include="..\src\Model_Terrain.h" />
+    <ClInclude Include="..\src\ShaderManager.h" />
+    <ClInclude Include="..\src\ShaderObject.h" />
+    <ClInclude Include="..\src\Model_Skybox.h" />
+    <ClInclude Include="..\src\SO_ColorLight.h" />
+    <ClInclude Include="..\src\SO_SimpleColor3D.h" />
+    <ClInclude Include="..\src\SO_SimpleTexture.h" />
+    <ClInclude Include="..\src\TextureManager.h" />
+    <ClInclude Include="..\src\TextureObject.h" />
+    <ClInclude Include="..\src\TextureNode_NULL.h" />
+    <ClInclude Include="..\src\TextureUtils.h" />
+    <ClInclude Include="..\src\_ModelWrapper.h" />
+    <ClInclude Include="..\src\_SOWrapper.h" />
+    <CLInclude Include="resource.h" />
+    <ResourceCompile Include="DXApplication.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Collections\Collections.vcxproj">
+      <Project>{77876aa3-cd2e-4f33-9cf4-a75d4e720479}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\File\File.vcxproj">
+      <Project>{f98902ee-6f29-479b-9a05-b2ed999a06d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Math_3.0\Math.vcxproj">
+      <Project>{d999076e-f08b-48fc-b732-e43e13041a07}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Pugixml\scripts\pugixml_vs2022_static.vcxproj">
+      <Project>{07cf01c0-b887-499d-ad9c-799cb6a9fe64}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Thread\Thread.vcxproj">
+      <Project>{84f74b68-74e3-4d84-b120-6ff4e3bb157f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Time\Time.vcxproj">
+      <Project>{886da24c-5e47-4fd4-a830-5e2fc46c1472}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Wwise\SpectralAnalysis\SoundEnginePlugin\SpectralAnalysis_Windows_vc170_static.vcxproj">
+      <Project>{7f95da09-3288-23ae-a79a-71779d883321}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\include\DirectXTex_X86Debug.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIO.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

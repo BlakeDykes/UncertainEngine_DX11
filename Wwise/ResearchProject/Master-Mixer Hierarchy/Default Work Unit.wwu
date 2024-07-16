@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5A7C6230-AEFD-48F2-A0A2-52FB80AB5BE8}" SchemaVersion="119">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{5A7C6230-AEFD-48F2-A0A2-52FB80AB5BE8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{1451530C-1696-4B67-B7D3-C520F088C0E8}" WorkUnitID="{31B5DE32-3CCC-46CE-80E6-1997F4C2086A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Environmental" ID="{54B8A987-522F-43CA-AFB1-0A64EEA29B12}"/>
+						<Bus Name="Non-Environmental" ID="{583A58FD-CF26-4E6A-8540-C04B6354D570}">
+							<ChildrenList>
+								<Bus Name="Music" ID="{E84729C4-C22C-49E6-BDA2-8603A0965446}">
+									<ChildrenList>
+										<Bus Name="Percussion" ID="{315BCB24-ADCB-479C-A4E3-6ACFCB955C45}"/>
+										<Bus Name="Modular" ID="{AA722F22-C277-405A-AC14-1908A4CB6BAD}"/>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{74650BD0-C9DD-4743-BEED-B22099B54753}" ShortID="483278642">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="SpectralAnalysis" CompanyID="64" PluginID="10594" PluginType="3">
+																<ObjectRef Name="SA_Default" ID="{F8E41CBF-A1A2-4882-94DE-2CD8D5A17709}" WorkUnitID="{FEB65455-A8D6-4348-B9AF-DC02D660DCB7}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

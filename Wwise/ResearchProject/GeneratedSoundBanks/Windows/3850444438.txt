@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1405717701	Percussion_Stop			\Music\Percussion_Stop	
+	2717275287	Percussion_Play			\Music\Percussion_Play	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3850444438	Percussion			\Default Work Unit\Percussion	
+
+State	ID	Name	State Group			Notes
+	209137191	Action	Percussion			
+	748895195	None	Percussion			
+	1107723959	Ominous	Percussion			
+	4294400669	Chill	Percussion			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	659738430	Percussion_LowPass			\Default Work Unit\Music\Percussion\Percussion_LowPass	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	205256168	SnackPack_4	C:\Depaul\CSC_695\cdykes\Wwise\ResearchProject\.cache\Windows\SFX\SnackPack_4_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Percussion\Chill\SnackPack_4\SnackPack_4		6896676
+	669448490	SnackPack_5	C:\Depaul\CSC_695\cdykes\Wwise\ResearchProject\.cache\Windows\SFX\SnackPack_5_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Percussion\Ominous\SnackPack_5\SnackPack_5		3898724
+	719428485	SnackPack_1	C:\Depaul\CSC_695\cdykes\Wwise\ResearchProject\.cache\Windows\SFX\SnackPack_1_B9170B35.wem		\Interactive Music Hierarchy\Default Work Unit\Percussion\Action\SnackPack_1\SnackPack_1		6714556
+

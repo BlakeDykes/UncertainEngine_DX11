@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{67a41f28-9759-47d6-ab42-66e90499f213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main DX App">
+      <UniqueIdentifier>{2b220d25-da3f-4235-b289-0c75799ee22c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools">
+      <UniqueIdentifier>{c6b91704-0352-4999-90a6-1edb274c4c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model">
+      <UniqueIdentifier>{0377c4e8-3072-445b-ab53-b04373828c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MemTracker">
+      <UniqueIdentifier>{ecb3a657-e2a3-4d70-af7f-b4b137271493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shaders">
+      <UniqueIdentifier>{27c8bd0a-4c6a-4429-86c2-23eab37eabbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shaders\ShaderObjects">
+      <UniqueIdentifier>{e22a39fc-6069-460e-ae88-b744ab80336a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject">
+      <UniqueIdentifier>{24425c64-856d-47ba-9706-6d108fcecaa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Texture">
+      <UniqueIdentifier>{44edc8fd-a450-4f67-b23f-ab5b075a7ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Model\Models">
+      <UniqueIdentifier>{23477392-6b83-45fa-80f0-e912baac8748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GraphicsObject">
+      <UniqueIdentifier>{3b3676d6-87b3-44b1-87e3-b6b0f11b2c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Material">
+      <UniqueIdentifier>{16d65da1-c54f-4ea1-b99e-e6dc82cd4194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lighting">
+      <UniqueIdentifier>{4557dca5-44be-4c3c-9481-635d4c358351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Reflection">
+      <UniqueIdentifier>{043a840b-39f6-4000-83fb-667816912706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lighting\LightCommands">
+      <UniqueIdentifier>{e9a1b499-2b89-4538-b01a-1908a071a942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{bef801e7-3163-4740-a3e1-157a3d0a3ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Camera">
+      <UniqueIdentifier>{97168b11-cf39-4b1c-832e-4b23d69207c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameObject\Specialized">
+      <UniqueIdentifier>{27a0b3f8-5610-4d72-b779-d79aa88e1198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{e3c14d45-357f-468f-bf34-9e62afc66330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DXTex">
+      <UniqueIdentifier>{5c694ef2-4948-4424-b1fb-93f9a949649e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DXTex\include">
+      <UniqueIdentifier>{fcc90a4b-27ed-4e27-9508-10a04c8f6f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DXTex\lib">
+      <UniqueIdentifier>{cbc43a5b-3898-4487-903e-6f3d4a784c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio">
+      <UniqueIdentifier>{bc6df8d5-c3f2-4220-879a-3c4113d0cd73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\AudioThread">
+      <UniqueIdentifier>{4a37ac24-8f20-4f5f-ab87-7cdcf5498d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\GameThread">
+      <UniqueIdentifier>{bbce0c95-9d9a-4fd9-93e6-f7b5b298acac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Wwise">
+      <UniqueIdentifier>{75ad9827-a20c-48c9-bc8a-4572bb0f79c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Wwise\AKSamples">
+      <UniqueIdentifier>{8ebae8f1-43e1-4ffd-9441-47b8af8aacca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Wwise\AKSamples\SoundEngine">
+      <UniqueIdentifier>{b552caf8-3341-4d32-ad5e-19787c54d097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Wwise\AKSamples\SoundEngine\Common">
+      <UniqueIdentifier>{2ef02ce1-7a99-4614-8b53-d7fb8ebfa73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Wwise\AKSamples\SoundEngine\Win32">
+      <UniqueIdentifier>{505ac8ea-50f1-4718-86a0-4f6d9ef88cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\GameThread\RTPC">
+      <UniqueIdentifier>{b9a110ea-f9e5-4408-a720-81225363bd20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lighting\LightController">
+      <UniqueIdentifier>{b842b61a-16e5-44e8-a877-11cd29d39c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FileThread">
+      <UniqueIdentifier>{53e4e264-c3df-437e-a40d-223ebd146627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FileThread\Commands">
+      <UniqueIdentifier>{c9356fb9-f83b-4314-a4cc-696a6b42b66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\AudioThread\Commands">
+      <UniqueIdentifier>{e7a4d307-807e-4d7d-af73-890ed92ca9d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\GameThread\RTPC\Commands">
+      <UniqueIdentifier>{28bebad3-fd9e-43a9-a80c-3cd275f1c28d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\AudioThread\Commands\Callback">
+      <UniqueIdentifier>{a6088382-d5dc-48cb-977e-efc4f949ff29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\AudioThread\PluginInfo">
+      <UniqueIdentifier>{27d5f3d2-5990-49cf-be28-71a94a24c53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shaders\CBuffers">
+      <UniqueIdentifier>{25a18d79-0825-43f2-92e5-89f421caafb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio\GameThread\CBuffer">
+      <UniqueIdentifier>{6323f4c1-d336-4a6b-be24-4ab55e7c7be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Shaders\ShaderObjects\AudioSO">
+      <UniqueIdentifier>{45d5383d-aa57-420e-a7d9-f551d600591b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="..\src\d3dUtil.cpp">
+      <Filter>Source\Main DX App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DXApp.cpp">
+      <Filter>Source\Main DX App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameTimer.cpp">
+      <Filter>Source\Main DX App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Model.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ModelTools.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CBuffers.cpp">
+      <Filter>Source\Shaders\CBuffers</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderObject.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_SimpleColor3D.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameObject.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ModelManager.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_ColorLight.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TextureObject.cpp">
+      <Filter>Source\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_SimpleTexture.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ShaderManager.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Model_FlatPlane.cpp">
+      <Filter>Source\Model\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CamController.cpp">
+      <Filter>Source\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Model_Skybox.cpp">
+      <Filter>Source\Model\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TextureManager.cpp">
+      <Filter>Source\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GraphicsObject.cpp">
+      <Filter>Source\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Model_Terrain.cpp">
+      <Filter>Source\Model\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaterialManager.cpp">
+      <Filter>Source\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaterialObject.cpp">
+      <Filter>Source\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneLightManager.cpp">
+      <Filter>Source\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SceneLightObject.cpp">
+      <Filter>Source\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_ColorSelected3D.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_NULL.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LightParams.cpp">
+      <Filter>Source\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_TextureLight.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ReflectionManager.cpp">
+      <Filter>Source\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ReflectionPlane.cpp">
+      <Filter>Source\Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GraphicsObjectManager.cpp">
+      <Filter>Source\GraphicsObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Mesh.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LC_DeltaPos.cpp">
+      <Filter>Source\Lighting\LightCommands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DeltaMod.cpp">
+      <Filter>Source\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TextureObject_Multi.cpp">
+      <Filter>Source\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_BlendedTile.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_ColorLight_1_3_1.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_TextureLight_1_3_1.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_BlendedTile_1_3_1.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EngineNames.cpp">
+      <Filter>Source\Main DX App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameObjectManager.cpp">
+      <Filter>Source\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Camera.cpp">
+      <Filter>Source\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameObj_Light.cpp">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameObj_Root.cpp">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ShaderNode.cpp">
+      <Filter>Source\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="_InputLayouts.cpp">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TextureNode.cpp">
+      <Filter>Source\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ModelNode.cpp">
+      <Filter>Source\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AudioManager.cpp">
+      <Filter>Source\Audio\AudioThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkDefaultIOHookDeferred.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkPlatformProfilerHooks.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\stdafx.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileLocationBase.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackage.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLUT.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkGeneratedSoundBanksResolver.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkJobWorkerMgr.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkMultipleFileLocation.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkPlatformProfilerHookStubs.cpp">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\_ManagerWrapper.cpp">
+      <Filter>Source\Main DX App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\RTPCManager.cpp">
+      <Filter>Source\Audio\GameThread\RTPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\RTPCObject.cpp">
+      <Filter>Source\Audio\GameThread\RTPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LightController.cpp">
+      <Filter>Source\Lighting\LightController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LightParamController.cpp">
+      <Filter>Source\Lighting\LightController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\RTPCLerp.cpp">
+      <Filter>Source\Audio\GameThread\RTPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FileThread.cpp">
+      <Filter>Source\FileThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FileCoordinator.cpp">
+      <Filter>Source\FileThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Buffer.cpp">
+      <Filter>Source\FileThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FC_LoadFiles.cpp">
+      <Filter>Source\FileThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_PostEvent.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_RegisterObject.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_SetDefaultListener.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_SetListener.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_SetState.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_UnregisterObject.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\RTPCC_Base.cpp">
+      <Filter>Source\Audio\GameThread\RTPC\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\RTPCC_LightParam.cpp">
+      <Filter>Source\Audio\GameThread\RTPC\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AudioNode.cpp">
+      <Filter>Source\Audio\GameThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AudioObjectManager.cpp">
+      <Filter>Source\Audio\AudioThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AudioObject.cpp">
+      <Filter>Source\Audio\AudioThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AudioPoster.cpp">
+      <Filter>Source\Audio\GameThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_SendPluginGameData.cpp">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AudioPluginInfo.cpp">
+      <Filter>Source\Audio\AudioThread\PluginInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\AC_CB.cpp">
+      <Filter>Source\Audio\AudioThread\Commands\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\Model_AudioSpectrum.cpp">
+      <Filter>Source\Model\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GameObj_Audio.cpp">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\SpectralRequest_CBuffer.cpp">
+      <Filter>Source\Audio\GameThread\CBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SO_SpectrumLight.cpp">
+      <Filter>Source\Shaders\ShaderObjects\AudioSO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Audio\SO_MagnitudeLight.cpp">
+      <Filter>Source\Shaders\ShaderObjects\AudioSO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ClInclude Include="..\src\d3dUtil.h">
+      <Filter>Source\Main DX App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DXApp.h">
+      <Filter>Source\Main DX App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameTimer.h">
+      <Filter>Source\Main DX App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Model.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ModelTools.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MemTracker\Framework.h">
+      <Filter>Source\MemTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MemTracker\ProjectSettings.h">
+      <Filter>Source\MemTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CBuffers.h">
+      <Filter>Source\Shaders\CBuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ShaderObject.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_SimpleColor3D.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameObject.h">
+      <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ModelManager.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_ColorLight.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextureObject.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_SimpleTexture.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ShaderManager.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Model_FlatPlane.h">
+      <Filter>Source\Model\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CamController.h">
+      <Filter>Source\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Model_Skybox.h">
+      <Filter>Source\Model\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_ModelWrapper.h">
+      <Filter>Source\Model\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextureManager.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GraphicsObject.h">
+      <Filter>Source\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Model_Terrain.h">
+      <Filter>Source\Model\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextureUtils.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_SOWrapper.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaterialManager.h">
+      <Filter>Source\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaterialObject.h">
+      <Filter>Source\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneLightManager.h">
+      <Filter>Source\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SceneLightObject.h">
+      <Filter>Source\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LightParams.h">
+      <Filter>Source\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextureNode_NULL.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaterialObject_NULL.h">
+      <Filter>Source\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_ColorSelected3D.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_NULL.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Model_NULL.h">
+      <Filter>Source\Model\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_TextureLight.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ReflectionManager.h">
+      <Filter>Source\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ReflectionPlane.h">
+      <Filter>Source\Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GraphicsObjectManager.h">
+      <Filter>Source\GraphicsObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Mesh.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Utils.h">
+      <Filter>Source\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LC_DeltaPos.h">
+      <Filter>Source\Lighting\LightCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_LightCommandWrapper.h">
+      <Filter>Source\Lighting\LightCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DeltaMod.h">
+      <Filter>Source\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextureObject_Multi.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_BlendedTile.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LC_Debug.h">
+      <Filter>Source\Lighting\LightCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_ColorLight_1_3_1.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_TextureLight_1_3_1.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_BlendedTile_1_3_1.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EngineNames.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameObjectManager.h">
+      <Filter>Source\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Camera.h">
+      <Filter>Source\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameObj_Light.h">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameObj_Root.h">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_GameObjectWrapper.h">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\_Uncertain.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ShaderNode.h">
+      <Filter>Source\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Framework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\ProjectSettings.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\ThreadFramework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_InputLayouts.h">
+      <Filter>Source\Shaders\ShaderObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextureNode.h">
+      <Filter>Source\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ModelNode.h">
+      <Filter>Source\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DirectXTex.h">
+      <Filter>include\DXTex\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AudioManager.h">
+      <Filter>Source\Audio\AudioThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkDefaultIOHookDeferred.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkFileHelpers.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Win32\stdafx.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileHelpersBase.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileLocationBase.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackage.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIO.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIODeferred.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLUT.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkGeneratedSoundBanksResolver.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkJobWorkerMgr.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkMultipleFileLocation.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkPlatformProfilerHooks.h">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_Helpers.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\_ManagerWrapper.h">
+      <Filter>Source\Main DX App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\RTPCManager.h">
+      <Filter>Source\Audio\GameThread\RTPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\RTPCObject.h">
+      <Filter>Source\Audio\GameThread\RTPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LightController.h">
+      <Filter>Source\Lighting\LightController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LightParamController.h">
+      <Filter>Source\Lighting\LightController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\RTPCLerp.h">
+      <Filter>Source\Audio\GameThread\RTPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FileThread.h">
+      <Filter>Source\FileThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FileCoordinator.h">
+      <Filter>Source\FileThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Buffer.h">
+      <Filter>Source\FileThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FC_LoadFiles.h">
+      <Filter>Source\FileThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_PostEvent.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_RegisterObject.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_SetDefaultListener.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_SetListener.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_SetState.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_UnregisterObject.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\_AudioCommandWrapper.h">
+      <Filter>Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\_RTPCCWrapper.h">
+      <Filter>Source\Audio\GameThread\RTPC\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\RTPCC_Base.h">
+      <Filter>Source\Audio\GameThread\RTPC\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\RTPCC_LightParam.h">
+      <Filter>Source\Audio\GameThread\RTPC\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\_AudioThreadCommandWrapper.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_SendPluginGameData.h">
+      <Filter>Source\Audio\AudioThread\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_CB_DAO.h">
+      <Filter>Source\Audio\AudioThread\Commands\Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AudioNode.h">
+      <Filter>Source\Audio\GameThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AudioObjectManager.h">
+      <Filter>Source\Audio\AudioThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AudioObject.h">
+      <Filter>Source\Audio\AudioThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AudioPoster.h">
+      <Filter>Source\Audio\GameThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AC_CB.h">
+      <Filter>Source\Audio\AudioThread\Commands\Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\AudioPluginInfo.h">
+      <Filter>Source\Audio\AudioThread\PluginInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\Model_AudioSpectrum.h">
+      <Filter>Source\Model\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GameObj_Audio.h">
+      <Filter>Source\GameObject\Specialized</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\SpectralRequest_CBuffer.h">
+      <Filter>Source\Audio\GameThread\CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SO_SpectrumLight.h">
+      <Filter>Source\Shaders\ShaderObjects\AudioSO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Audio\SO_MagnitudeLight.h">
+      <Filter>Source\Shaders\ShaderObjects\AudioSO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DXApplication.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\include\DirectXTex_X86Debug.lib">
+      <Filter>include\DXTex\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIO.inl">
+      <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "TextureData.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+message ModelTextureData_proto
+{
+	optional bytes name = 1;
+	optional uint32 textureCount = 2;
+	repeated TextureData_proto textures = 3;
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Basics1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Converter</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>CppCoreCheckConstRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BOILER;CONVERTER;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Collections\include;$(solutionDir)..\Protos;$(SolutionDir)..\Framework;$(SolutionDir)Test;$(SolutionDir)JSON;$(SolutionDir)..\TinyGLTF;$(SolutionDir)..\ProtoBuff;$(SolutionDir)..\File\include;$(SolutionDir)..\TinyGLTF\include;$(SolutionDir)..\Shaders;$(SolutionDIr)..\Math_3.0\include</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h;</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>5266</DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)..\ProtoBuff\libs\debug\protoc.exe" -I=$(SolutionDir)..\Protos\  --cpp_out=$(SolutionDir)..\Protos\ $(SolutionDir)..\Protos\*.proto</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;MAYO;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)Test;$(SolutionDir)Tools</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h;ThreadFramework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Protos\AnimData.cpp" />
+    <ClCompile Include="..\..\Protos\AnimData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ArmatureData.cpp" />
+    <ClCompile Include="..\..\Protos\ArmatureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\BoundingObjectData.cpp" />
+    <ClCompile Include="..\..\Protos\BoundingObjectData.pb.cc" />
+    <ClCompile Include="..\..\Protos\MeshData.cpp" />
+    <ClCompile Include="..\..\Protos\MeshData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ModelData.cpp" />
+    <ClCompile Include="..\..\Protos\ModelData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ModelTextureData.cpp" />
+    <ClCompile Include="..\..\Protos\ModelTextureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\SpriteSheetData.cpp" />
+    <ClCompile Include="..\..\Protos\SpriteSheetData.pb.cc" />
+    <ClCompile Include="..\..\Protos\TextureData.cpp" />
+    <ClCompile Include="..\..\Protos\TextureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\VBOData.cpp" />
+    <ClCompile Include="..\..\Protos\VBOData.pb.cc" />
+    <ClCompile Include="Converter_AnimData.cpp" />
+    <ClCompile Include="Converter_MeshData.cpp" />
+    <ClCompile Include="Converter_TextureData.cpp" />
+    <ClCompile Include="Converter_VBOData.cpp" />
+    <ClCompile Include="GLTF_Wrapper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProtoData_Wrapper.cpp" />
+    <ClInclude Include="..\..\Framework\Framework.h" />
+    <ClInclude Include="..\..\Framework\ProjectSettings.h" />
+    <ClInclude Include="..\..\Framework\ThreadFramework.h" />
+    <ClInclude Include="..\..\Protos\AnimData.h" />
+    <ClInclude Include="..\..\Protos\AnimData.pb.h" />
+    <ClInclude Include="..\..\Protos\ArmatureData.h" />
+    <ClInclude Include="..\..\Protos\ArmatureData.pb.h" />
+    <ClInclude Include="..\..\Protos\BoundingObjectData.h" />
+    <ClInclude Include="..\..\Protos\BoundingObjectData.pb.h" />
+    <ClInclude Include="..\..\Protos\MeshData.h" />
+    <ClInclude Include="..\..\Protos\MeshData.pb.h" />
+    <ClInclude Include="..\..\Protos\ModelData.h" />
+    <ClInclude Include="..\..\Protos\ModelData.pb.h" />
+    <ClInclude Include="..\..\Protos\ModelTextureData.h" />
+    <ClInclude Include="..\..\Protos\ModelTextureData.pb.h" />
+    <ClInclude Include="..\..\Protos\SpriteSheetData.h" />
+    <ClInclude Include="..\..\Protos\SpriteSheetData.pb.h" />
+    <ClInclude Include="..\..\Protos\TextureData.h" />
+    <ClInclude Include="..\..\Protos\TextureData.pb.h" />
+    <ClInclude Include="..\..\Protos\VBOData.h" />
+    <ClInclude Include="..\..\Protos\VBOData.pb.h" />
+    <ClInclude Include="..\JSON\json.hpp" />
+    <ClInclude Include="Converter_AnimData.h" />
+    <ClInclude Include="Converter_MeshData.h" />
+    <ClInclude Include="Converter_TextureData.h" />
+    <ClInclude Include="Converter_VBOData.h" />
+    <ClInclude Include="Converter_Wrapper.h" />
+    <ClInclude Include="GLTF_Wrapper.h" />
+    <ClInclude Include="ProtoData_Wrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Protos\AnimData.proto" />
+    <None Include="..\..\Protos\ArmatureData.proto" />
+    <None Include="..\..\Protos\BoundingObjectData.proto" />
+    <None Include="..\..\Protos\MeshData.proto" />
+    <None Include="..\..\Protos\ModelData.proto" />
+    <None Include="..\..\Protos\ModelTextureData.proto" />
+    <None Include="..\..\Protos\SpriteSheetData.proto" />
+    <None Include="..\..\Protos\TextureData.proto" />
+    <None Include="..\..\Protos\VBOData.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\ProtoBuff\libs\debug\libprotobuf-lited.lib" />
+    <Library Include="..\..\ProtoBuff\libs\release\libprotobuf-lite.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\..\TinyGLTF\libs\tinygltf.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\File\File.vcxproj">
+      <Project>{f98902ee-6f29-479b-9a05-b2ed999a06d6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Math_3.0\Math.vcxproj">
+      <Project>{d999076e-f08b-48fc-b732-e43e13041a07}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

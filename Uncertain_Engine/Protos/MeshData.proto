@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "VBOData.proto";
+import "BoundingObjectData.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+message MeshData_proto
+{
+	enum RENDER_MODE
+	{
+		MODE_POINTS				= 0;
+		MODE_LINE				= 1;
+		MODE_LINE_LOOP			= 2;
+		MODE_LINE_STRIP			= 3;
+		MODE_TRIANGLES			= 4;
+		MODE_TRIANGLES_STRIP	= 5;
+		MODE_TRIANGLES_FAN		= 6;
+	};
+	
+	message SkinningData
+	{
+		optional VBOData_proto VBOJoints = 1;
+		optional VBOData_proto VBOWeights = 2;
+		optional VBOData_proto VBOInvBind = 3;
+	};
+
+	optional bytes						pMeshName = 1;
+	optional RENDER_MODE				mode = 2;
+	optional uint32						triCount = 3;
+	optional uint32						vertCount = 4;
+	optional VBOData_proto				vboVert = 5;
+	optional VBOData_proto				vboNorm = 6;
+	optional VBOData_proto				vboUV = 7;
+	optional VBOData_proto				vboIndex = 8;
+	optional SkinningData				skinData = 9;
+	optional BoundingObjectData_proto	bounding_sphere = 10;
+	optional uint32						materialIndex = 11;
+	optional uint32						nodeIndex = 12;
+}

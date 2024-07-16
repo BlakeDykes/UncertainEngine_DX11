@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+import "TextureData.proto";
+
+option optimize_for = LITE_RUNTIME;
+
+message SpriteSheetData_proto
+{
+	enum TYPE
+	{
+		SPRITE	= 0;
+		FONT	= 1;
+	};
+
+	message Image
+	{
+		optional bytes imageName	= 1;
+		optional int32 key			= 2;
+		optional int32 height		= 3;
+		optional int32 width		= 4;
+		optional int32 y			= 5;
+		optional int32 x			= 6;
+	};
+
+	optional bytes				name		= 1;
+	optional TextureData_proto	text		= 2;
+	optional uint32				imageCount	= 3;
+	repeated Image				images		= 4;
+	optional TYPE				type		= 5;
+}

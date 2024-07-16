@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{62756e66-8839-482b-8326-513973ed48aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2b319c65-0584-4b21-b5d0-304499424029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{f9ef4c49-2541-4d1f-81b1-acd84457891d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\DLink">
+      <UniqueIdentifier>{0e52fe46-fd30-4f41-b72d-b43cec673e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DLink">
+      <UniqueIdentifier>{b242c654-edcd-47d9-8f56-92a03b15dfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\CommandQueue">
+      <UniqueIdentifier>{1a76dcc5-c384-46f4-ab5e-d26dce244c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CommandQueue">
+      <UniqueIdentifier>{a86891bd-3229-49b9-924c-4825f42d9959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\_Base">
+      <UniqueIdentifier>{73df55f9-cf7b-43a1-9183-c2789bbacad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\_Base">
+      <UniqueIdentifier>{9b8c8465-0e69-457b-8565-18b0821e16cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\PCSTree">
+      <UniqueIdentifier>{3484dea7-02a6-4b19-a61d-49ffca82df3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PCSTree">
+      <UniqueIdentifier>{626b7ac7-d41e-44de-9ec9-2b1ffd2945df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\SLink">
+      <UniqueIdentifier>{18fda977-542a-4599-bb9e-fbe80347ec25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SLink">
+      <UniqueIdentifier>{5b8875e2-23c7-4a49-8ec6-7e0d91e09067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\HandleTable">
+      <UniqueIdentifier>{de6044f3-2a47-477f-998a-6240422655a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HandleTable">
+      <UniqueIdentifier>{9284072b-5a4a-4920-a44b-91ef0a38af0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ProjectSettings.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ThreadFramework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DLink.h">
+      <Filter>include\DLink</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DLinkIterator.h">
+      <Filter>include\DLink</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DLinkManager.h">
+      <Filter>include\DLink</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Command.h">
+      <Filter>include\CommandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommandIndex.h">
+      <Filter>include\CommandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommandQueue.h">
+      <Filter>include\CommandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommandQueueManager.h">
+      <Filter>include\CommandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NodeBase.h">
+      <Filter>include\_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CollectionBase.h">
+      <Filter>include\_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IteratorBase.h">
+      <Filter>include\_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ManagerBase.h">
+      <Filter>include\_Base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PCSNode.h">
+      <Filter>include\PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PCSTree.h">
+      <Filter>include\PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PCSTreeForwardIterator.h">
+      <Filter>include\PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PCSTreeIterator.h">
+      <Filter>include\PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PCSTreeReverseIterator.h">
+      <Filter>include\PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SLink.h">
+      <Filter>include\SLink</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommandQueuePusher.h">
+      <Filter>include\CommandQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HandleTable.h">
+      <Filter>include\HandleTable</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Handle.h">
+      <Filter>include\HandleTable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_Engine_\include\EngineNames.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DLink.cpp">
+      <Filter>src\DLink</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DLinkIterator.cpp">
+      <Filter>src\DLink</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DLinkManager.cpp">
+      <Filter>src\DLink</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Command.cpp">
+      <Filter>src\CommandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommandIndex.cpp">
+      <Filter>src\CommandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommandQueue.cpp">
+      <Filter>src\CommandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommandQueueManager.cpp">
+      <Filter>src\CommandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ManagerBase.cpp">
+      <Filter>src\_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCSNode.cpp">
+      <Filter>src\PCSTree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCSTree.cpp">
+      <Filter>src\PCSTree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCSTreeForwardIterator.cpp">
+      <Filter>src\PCSTree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCSTreeReverseIterator.cpp">
+      <Filter>src\PCSTree</Filter>
+    </ClCompile>
+    <ClCompile Include="include\SLink.cpp">
+      <Filter>src\SLink</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommandQueuePusher.cpp">
+      <Filter>src\CommandQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HandleTable.cpp">
+      <Filter>src\HandleTable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Handle.cpp">
+      <Filter>src\HandleTable</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

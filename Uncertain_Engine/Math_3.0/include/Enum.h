@@ -1,0 +1,141 @@
+#pragma once
+namespace Uncertain 
+{
+	enum x_enum
+	{
+		x = 0,
+		X = 0,
+		vx = 0,
+		VX = 0
+	};
+
+	enum y_enum
+	{
+		y = 0,
+		Y = 0,
+		vy = 0,
+		VY = 0
+	};
+
+	enum z_enum
+	{
+		z = 0,
+		Z = 0,
+		vz = 0,
+		VZ = 0
+	};
+
+	enum w_enum
+	{
+		w = 0,
+		W = 0,
+		real = 0,
+		REAL = 0
+	};
+
+	enum real0_enum
+	{
+		real0 = 0,
+		r0 = 0
+	};
+
+	enum imag0_enum
+	{
+		imag0 = 0,
+		i0 = 0
+	};
+
+	enum real1_enum
+	{
+		real1 = 0,
+		r1 = 0
+	};
+
+	enum imag1_enum
+	{
+		imag1 = 0,
+		i1 = 0
+	};
+
+	enum m0_enum
+	{
+		m0
+	};
+
+	enum m1_enum
+	{
+		m1
+	};
+
+	enum m2_enum
+	{
+		m2
+	};
+
+	enum m3_enum
+	{
+		m3
+	};
+
+	enum m4_enum
+	{
+		m4
+	};
+
+	enum m5_enum
+	{
+		m5
+	};
+
+	enum m6_enum
+	{
+		m6
+	};
+
+	enum m7_enum
+	{
+		m7
+	};
+
+	enum m8_enum
+	{
+		m8
+	};
+
+	enum m9_enum
+	{
+		m9
+	};
+
+	enum m10_enum
+	{
+		m10
+	};
+
+	enum m11_enum
+	{
+		m11
+	};
+
+	enum m12_enum
+	{
+		m12
+	};
+
+	enum m13_enum
+	{
+		m13
+	};
+
+	enum m14_enum
+	{
+		m14
+	};
+
+	enum m15_enum
+	{
+		m15
+	};
+}
+
+//--- End of File ---

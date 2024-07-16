@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2974398838	Modular_Play			\Music\Modular_Play	
+	3746512648	Modular_Stop			\Music\Modular_Stop	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2165403525	Modular			\Default Work Unit\Modular	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Modular			
+	3205567180	EG_Now	Modular			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	625022454	EshanGelsi_Now_1	C:\Depaul\CSC_695\cdykes\Wwise\ResearchProject\.cache\Windows\SFX\EshanGelsi_Now_1_B9170B35.wem		\Interactive Music Hierarchy\Default Work Unit\Modular\EhsanGhelsi\Now\EshanGelsi_Now_1		50082964
+

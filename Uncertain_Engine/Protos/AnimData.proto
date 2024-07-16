@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+message AnimData_proto
+{
+
+	enum TYPE
+	{
+		RIGID	= 0;
+		SKINNED = 1;
+	};
+
+	message Translation
+	{
+		optional float x = 1;
+		optional float y = 2;
+		optional float z = 3;
+	}
+
+	message Rotation
+	{
+		optional float x = 1;
+		optional float y = 2;
+		optional float z = 3;
+		optional float w = 4;
+	}
+
+	message Scale
+	{
+		optional float x = 1;
+		optional float y = 2;
+		optional float z = 3;
+	}
+
+	message Bone
+	{
+		optional Translation 	trans = 1;
+		optional Rotation		rot = 2;
+		optional Scale			scale = 3;
+	}
+
+	message Frame
+	{
+		optional float time = 1;
+		repeated Bone  bones = 2;
+	}
+
+	message Node
+	{
+		optional bytes			nodeName = 1;
+		optional int32			index = 2;
+		optional int32			childrenCount = 3;
+		repeated int32			childIndex = 4;
+		optional Translation	t = 5;
+		optional Rotation		r =  6;
+		optional Scale			s = 7;
+	}
+
+	optional bytes		name = 1;
+	optional TYPE		animType = 2;
+	optional uint32		frameCount = 3;
+	optional uint32		jointCount = 5;
+	repeated Node		joints = 6;
+	repeated Frame		frames = 7;
+}

@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{9a6e800f-af0b-4dfd-80e9-04ae87bddc60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32_vc170">
+      <UniqueIdentifier>{c216cb63-c0e9-410b-9e67-74353c5d6d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK">
+      <UniqueIdentifier>{858da415-c9eb-468b-bed1-18e33cc21e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Comm">
+      <UniqueIdentifier>{123090ba-b5f2-4b66-a0c5-d3b384cc60ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\DSP">
+      <UniqueIdentifier>{790f4d51-698e-43c5-ac4a-09bfe32108f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\MusicEngine">
+      <UniqueIdentifier>{0f986863-0f1e-49ce-aaa0-5b45e5e56a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Plugin">
+      <UniqueIdentifier>{c55e3039-1e29-4fd5-8a26-d2ab9bce1698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\SoundEngine">
+      <UniqueIdentifier>{6c7736f8-b16d-4aa7-9da0-80db065f2090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\SpatialAudio">
+      <UniqueIdentifier>{254712ca-c22a-4c14-8df4-8bcb04abf172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Tools">
+      <UniqueIdentifier>{b5da4e92-c1a5-4e52-94b7-34d631bcbffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Wwise">
+      <UniqueIdentifier>{54d9c2b1-03db-4d7d-b74c-b1476e9406a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\WwiseAuthoringAPI">
+      <UniqueIdentifier>{5e173a5f-ebcf-46fc-b7c9-0bba45e64b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\DSP\Generic">
+      <UniqueIdentifier>{4baf2f2d-217b-490a-949b-69ff008858d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\MusicEngine\Common">
+      <UniqueIdentifier>{3486dd81-a7e5-44b6-9dd7-6f09ac449502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\SoundEngine\Common">
+      <UniqueIdentifier>{1ffb87d7-ede5-4416-8764-7bf9ec8266ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\SoundEngine\Platforms">
+      <UniqueIdentifier>{c7959af2-efec-4817-90d0-ea2ad4ef2e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\SoundEngine\Platforms\Windows">
+      <UniqueIdentifier>{510caff2-ced7-4092-8be6-910bccf88e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\SpatialAudio\Common">
+      <UniqueIdentifier>{b43abc00-af9f-4668-8e5d-31f3986c2242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Tools\Common">
+      <UniqueIdentifier>{fc7990e1-98fd-46d8-b3ad-8ecc6e01086c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Tools\Win32">
+      <UniqueIdentifier>{f245d251-6530-485d-bab2-c29b500c1e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AK\Plugin\PluginServices">
+      <UniqueIdentifier>{9fae1720-e991-480f-ad7c-35a95479a2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32_vc170\Profile%28StaticCRT%29">
+      <UniqueIdentifier>{ea695269-4289-47f3-92da-1c9e45ddbc8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32_vc170\Profile%28StaticCRT%29\lib">
+      <UniqueIdentifier>{b0d1563b-2d46-4424-8436-2ac95423fc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32_vc170\Release%28StaticCRT%29">
+      <UniqueIdentifier>{64616e96-13a1-4a48-87f9-5c4c4dfee315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32_vc170\Release%28StaticCRT%29\lib">
+      <UniqueIdentifier>{65a8cf97-a9a0-4e58-ba39-d597200d054a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\Ak3DAudioBedMixerFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkAudioInputSource.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkAutobahn.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkCompressorFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkDelayFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkExpanderFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkFlangerFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkGainFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkGuitarDistortionFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkHarmonizerFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMatrixReverbFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMemoryMgr.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMeterFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMusicEngine.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkOpusDecoder.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkParametricEQFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkPeakLimiterFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkPitchShifterFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkRecorderFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkRoomVerbFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSilenceSource.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSineSource.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSoundEngine.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSoundSeedGrainSource.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSpatialAudio.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkStereoDelayFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkStreamMgr.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSynthOneSource.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkTimeStretchFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkToneSource.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkTremoloFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkVorbisDecoder.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AuroHeadphoneFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZHybridReverbFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashBoxModelerFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashDelayFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashDistortionFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashDynamicsFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashFiltersFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashMultibandDistortionFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\MasteringSuiteFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\McDSPFutzBoxFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\McDSPLimiterFX.lib">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\Ak3DAudioBedMixerFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkAudioInputSource.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkAutobahn.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkCompressorFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkDelayFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkExpanderFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkFlangerFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkGainFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkGuitarDistortionFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkHarmonizerFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMatrixReverbFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMemoryMgr.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMeterFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMusicEngine.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkOpusDecoder.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkParametricEQFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkPeakLimiterFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkPitchShifterFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkRecorderFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkRoomVerbFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSilenceSource.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSineSource.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSoundEngine.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSoundSeedGrainSource.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSpatialAudio.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkStereoDelayFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkStreamMgr.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSynthOneSource.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkTimeStretchFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkToneSource.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkTremoloFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkVorbisDecoder.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AuroHeadphoneFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\CommunicationCentral.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZHybridReverbFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashBoxModelerFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashDelayFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashDistortionFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashDynamicsFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashFiltersFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashMultibandDistortionFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\MasteringSuiteFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\McDSPFutzBoxFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+    <Library Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\McDSPLimiterFX.lib">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\Ak3DAudioBedMixerFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkAudioInputSource.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkAutobahn.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkCompressorFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkDelayFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkExpanderFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkFlangerFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkGainFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkGuitarDistortionFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkHarmonizerFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMatrixReverbFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMemoryMgr.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMeterFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkMusicEngine.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkOpusDecoder.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkParametricEQFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkPeakLimiterFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkPitchShifterFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkRecorderFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkRoomVerbFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSilenceSource.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSineSource.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSoundEngine.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSoundSeedGrainSource.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSpatialAudio.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkStereoDelayFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkStreamMgr.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkSynthOneSource.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkTimeStretchFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkToneSource.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkTremoloFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AkVorbisDecoder.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\AuroHeadphoneFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZHybridReverbFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashBoxModelerFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashDelayFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashDistortionFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashDynamicsFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashFiltersFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\iZTrashMultibandDistortionFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\MasteringSuiteFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\McDSPFutzBoxFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Release(StaticCRT)\lib\McDSPLimiterFX.pdb">
+      <Filter>Win32_vc170\Release%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)include\AK\AkWwiseSDKVersion.cs">
+      <Filter>include\AK</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\Ak3DAudioBedMixerFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkAudioInputSource.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkAutobahn.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkCompressorFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkDelayFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkExpanderFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkFlangerFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkGainFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkGuitarDistortionFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkHarmonizerFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMatrixReverbFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMemoryMgr.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMeterFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkMusicEngine.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkOpusDecoder.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkParametricEQFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkPeakLimiterFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkPitchShifterFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkRecorderFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkRoomVerbFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSilenceSource.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSineSource.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSoundEngine.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSoundSeedGrainSource.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSpatialAudio.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkStereoDelayFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkStreamMgr.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkSynthOneSource.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkTimeStretchFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkToneSource.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkTremoloFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AkVorbisDecoder.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\AuroHeadphoneFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\CommunicationCentral.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZHybridReverbFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashBoxModelerFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashDelayFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashDistortionFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashDynamicsFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashFiltersFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\iZTrashMultibandDistortionFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\MasteringSuiteFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\McDSPFutzBoxFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Win32_vc170\Profile(StaticCRT)\lib\McDSPLimiterFX.pdb">
+      <Filter>Win32_vc170\Profile%28StaticCRT%29\lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\AkPlatforms.h">
+      <Filter>include\AK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\AkWwiseSDKVersion.h">
+      <Filter>include\AK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\IBytes.h">
+      <Filter>include\AK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Wwise_IDs.h">
+      <Filter>include\AK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Comm\AkCommunication.h">
+      <Filter>include\AK\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\Generic\AkDelayLineMemory.h">
+      <Filter>include\AK\DSP\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\Generic\AkDelayLineMemoryStream.h">
+      <Filter>include\AK\DSP\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\AkApplyGain.h">
+      <Filter>include\AK\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\AkDelayLineMemory.h">
+      <Filter>include\AK\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\AkDelayLineMemoryStream.h">
+      <Filter>include\AK\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\AkModulatorProcess.h">
+      <Filter>include\AK\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\DSP\AkVolAutomation.h">
+      <Filter>include\AK\DSP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\MusicEngine\Common\AkMusicEngine.h">
+      <Filter>include\AK\MusicEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkAtomic.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkAudioMarker.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkBytesCount.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkBytesMem.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkCallback.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkCommonDefs.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkDynamicDialogue.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkDynamicSequence.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkErrorMessageTranslator.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkFPUtilities.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkHashTableFuncs.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkHashTableTypes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkMemoryMgr.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkMemoryMgrFuncs.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkMidiTypes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkMidiWwiseCmds.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkMixerTypes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkModule.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkNumeralTypes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkQueryParameters.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSimd.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSimdMath.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSimdTypes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSoundEngine.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSoundEngineExport.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSpeakerConfig.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkSpeakerVolumes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkStreamMgrModule.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkTypes.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkVirtualAcoustics.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkWavDefs.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkWwiseErrorHandler.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\AkXMLErrorMessageTranslator.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkPlatformContext.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkPlugin.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkPluginHashTable.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkPluginMemAlloc.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkProcessorFeatures.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkRTPCSubscriber.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\IAkStreamMgr.h">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Platforms\Windows\AkAtomic.h">
+      <Filter>include\AK\SoundEngine\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Platforms\Windows\AkMemoryMgrFuncs.h">
+      <Filter>include\AK\SoundEngine\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Platforms\Windows\AkPlatformContext.h">
+      <Filter>include\AK\SoundEngine\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Platforms\Windows\AkSimd.h">
+      <Filter>include\AK\SoundEngine\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Platforms\Windows\AkTypes.h">
+      <Filter>include\AK\SoundEngine\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Platforms\Windows\AkWinSoundEngine.h">
+      <Filter>include\AK\SoundEngine\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SpatialAudio\Common\AkReverbEstimation.h">
+      <Filter>include\AK\SpatialAudio\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SpatialAudio\Common\AkSpatialAudio.h">
+      <Filter>include\AK\SpatialAudio\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\SpatialAudio\Common\AkSpatialAudioTypes.h">
+      <Filter>include\AK\SpatialAudio\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkAllocator.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkArray.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkAssert.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkAutoLock.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkBankReadHelpers.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkBitFuncs.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkDynaBlkPool.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkFifoQueue.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkFNVHash.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkHashList.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkHeap.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkInstrument.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkKeyArray.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkKeyDef.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkListBare.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkListBareLight.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkLock.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkMonitorError.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkMonitorErrorImpl.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkMurMurHash.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkObject.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkObjectPool.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkPlatformFuncs.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkProfilingID.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkRingBuffer.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkRng.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkSet.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkSmartPtr.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkString.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkSyncCaller.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkTls.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Common\AkVectors.h">
+      <Filter>include\AK\Tools\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Win32\AkCOMScope.h">
+      <Filter>include\AK\Tools\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Win32\AkLock.h">
+      <Filter>include\AK\Tools\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Win32\AkMMDevice.h">
+      <Filter>include\AK\Tools\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Win32\AkMultipleFileLocation.h">
+      <Filter>include\AK\Tools\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Tools\Win32\AkPlatformFuncs.h">
+      <Filter>include\AK\Tools\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\Ak3DAudioBedMixerFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkAudioInputPlugin.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkAudioInputSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkCompressorFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkDelayFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkExpanderFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkFlangerFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkGainFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkGuitarDistortionFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkHarmonizerFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkMatrixReverbFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkMeterFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkOpusDecoderFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkParametricEQFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkPeakLimiterFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkPitchShifterFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkRecorderFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkReflectGameData.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkRoomVerbFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkSilenceSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkSineSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkSinkFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkSoundSeedGrainSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkStereoDelayFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkSynthOneSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkTimeStretchFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkToneSourceFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkTremoloFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AkVorbisDecoderFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AllPluginsFactories.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AllPluginsRegistrationHelpers.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\AuroHeadphoneFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZHybridReverbFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZTrashBoxModelerFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZTrashDelayFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZTrashDistortionFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZTrashDynamicsFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZTrashFiltersFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\iZTrashMultibandDistortionFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\MasteringSuiteFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\McDSPFutzBoxFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\McDSPLimiterFXFactory.h">
+      <Filter>include\AK\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\PluginServices\AkFXDurationHandler.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\PluginServices\AkFXParameterChangeHandler.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\PluginServices\AkFXTailHandler.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\PluginServices\AkMixerInputMap.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\PluginServices\AkValueRamp.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\AK\Plugin\PluginServices\AkVectorValueRamp.h">
+      <Filter>include\AK\Plugin\PluginServices</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)include\AK\SoundEngine\Common\ak.natvis">
+      <Filter>include\AK\SoundEngine\Common</Filter>
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)include\AK\Tools\Win32\AkPlatformProfilerHooks.cpp">
+      <Filter>include\AK\Tools\Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
