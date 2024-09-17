@@ -882,6 +882,44 @@
 								</Local>
 							</Reference>
 						</ObjectList>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{E8440490-5BEC-4535-875B-8B5B3EAC2B3A}" ShortID="488541820">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="OutputBusLowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Percussion_LowPass" ID="{9DE76CC9-7183-4796-8F4B-4134A5A88E62}" WorkUnitID="{6C03AD2D-9737-46D1-BC19-45DCDB2CC4EC}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B298CA0C-5AC5-4C07-9178-19ED3355EECD}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
 			</ChildrenList>

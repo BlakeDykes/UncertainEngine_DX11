@@ -11,7 +11,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{29F0D906-16E6-4F83-AEBC-7ABF003B0BD9}"/>
+						<CurrentStateRef Name="Chill" ID="{39CD1FA6-001C-4B47-8A0F-CD543963890B}"/>
 						<CurrentStateRef Name="None" ID="{EFA9AEEF-63AC-4962-9FF2-0D8BCAED98B4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

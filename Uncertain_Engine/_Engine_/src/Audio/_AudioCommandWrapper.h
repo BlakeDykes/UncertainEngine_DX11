@@ -1,4 +1,4 @@
 #pragma once
 
-#include "_AudioThreadCommandWrapper.h"
-#include "_RTPCCWrapper.h"
+#include "Audio/AudioThread/Commands/_AudioThreadCommandWrapper.h"
+#include "Audio/GameThread/RTPC/Commands/_RTPCCWrapper.h"
