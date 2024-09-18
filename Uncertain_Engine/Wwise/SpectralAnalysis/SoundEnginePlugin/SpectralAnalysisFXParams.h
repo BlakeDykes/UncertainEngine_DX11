@@ -75,3 +75,4 @@ struct SpectralAnalysisFXParams
 };
 
 #endif // SpectralAnalysisFXParams_H
+

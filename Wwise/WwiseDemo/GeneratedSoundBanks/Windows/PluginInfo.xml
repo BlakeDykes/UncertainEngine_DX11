@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Platform="Windows" BasePlatform="Windows">
+	<PluginLibs>
+		<PluginLib LibName="System" LibId="11403271" Type="AudioDevice"/>
+		<PluginLib LibName="No Output" LibId="11862023" Type="AudioDevice"/>
+		<PluginLib LibName="SpectralAnalysis" LibId="694289411" Type="Effect" DLL="SpectralAnalysis" StaticLib="SpectralAnalysisFX"/>
+	</PluginLibs>
+	<FileHash>{76613957-2FD8-E0E7-8C4A-0A5733BCE6D7}</FileHash>
+</PluginInfo>

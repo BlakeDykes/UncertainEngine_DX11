@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A064AB68-B481-40FD-91FB-521F677F7792}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Music" ID="{A064AB68-B481-40FD-91FB-521F677F7792}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Percussion_Play" ID="{B260C630-A4CD-43AD-A6EA-7C2E46DFAA77}">
+					<ChildrenList>
+						<Action Name="" ID="{04506186-35DC-475A-A4B1-98313C33731E}" ShortID="53442334">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Percussion" ID="{D67517A1-C6B5-4639-8FB8-C481E380DD48}" WorkUnitID="{D7C0CD24-1DC3-42E9-A58C-93E33FA66860}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Percussion_Stop" ID="{C5C57F4A-C4B7-4EF6-8B76-C4AA53A1C5B7}">
+					<ChildrenList>
+						<Action Name="" ID="{F86BBB11-B3EF-40B0-BE7F-83E3264211E6}" ShortID="782469794">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Percussion" ID="{D67517A1-C6B5-4639-8FB8-C481E380DD48}" WorkUnitID="{D7C0CD24-1DC3-42E9-A58C-93E33FA66860}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Modular_Play" ID="{556CE99D-3D70-4EE1-ADED-6BFA02FFF174}">
+					<ChildrenList>
+						<Action Name="" ID="{C9690341-B575-4307-AFB8-F42131E92D8A}" ShortID="912398247">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Modular" ID="{66847633-7408-40A8-86B9-278BECED2332}" WorkUnitID="{D7C0CD24-1DC3-42E9-A58C-93E33FA66860}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Modular_Stop" ID="{F1BAA6E0-1550-4E0A-99EB-879BAAA82DF2}">
+					<ChildrenList>
+						<Action Name="" ID="{1D2388FE-7507-470B-86D1-38A926BBE64D}" ShortID="800821089">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Modular" ID="{66847633-7408-40A8-86B9-278BECED2332}" WorkUnitID="{D7C0CD24-1DC3-42E9-A58C-93E33FA66860}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

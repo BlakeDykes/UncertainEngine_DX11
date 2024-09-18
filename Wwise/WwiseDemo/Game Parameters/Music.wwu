@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7C777B44-760E-468D-A45D-E776993D8BEE}" SchemaVersion="119" RootDocumentID="{045EE1DE-FB46-49CE-AF63-28F3AB3419F2}" ParentDocumentID="{045EE1DE-FB46-49CE-AF63-28F3AB3419F2}">
+	<GameParameters>
+		<WorkUnit Name="Music" ID="{7C777B44-760E-468D-A45D-E776993D8BEE}" OwnerID="{045EE1DE-FB46-49CE-AF63-28F3AB3419F2}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Percussion" ID="{6C03AD2D-9737-46D1-BC19-45DCDB2CC4EC}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
