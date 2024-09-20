@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="ResearchProject" GUID="{D32EB5C4-9916-4B67-98E7-625E969C2D0D}" Generator="2023.1.2.8444"/>
-	<CacheRoot>../../../../Wwise/ResearchProject/.cache</CacheRoot>
+	<Project Name="WwiseDemo" GUID="{D32EB5C4-9916-4B67-98E7-625E969C2D0D}" Generator="2023.1.5.8522"/>
+	<CacheRoot>../../../../Wwise/WwiseDemo/.cache</CacheRoot>
 	<Platforms>
-		<Platform Name="Windows" GUID="{29810EB0-3BA9-45C9-B372-C70ED1E3B281}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Wwise/ResearchProject/GeneratedSoundBanks/Windows"/>
+		<Platform Name="Windows" GUID="{29810EB0-3BA9-45C9-B372-C70ED1E3B281}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Wwise/WwiseDemo/GeneratedSoundBanks/Windows"/>
 	</Platforms>
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{17EF9695-0C94-4EAE-B0AC-E6706B5B20D3}" Default="true" UseAsStandIn="true"/>
+		<Language Name="SoundSeed Grain" Id="3532711372" GUID="{0FB704FA-C050-4FA6-BAA6-44357B96664A}"/>
 	</Languages>
-	<FileHash>{438CE5B6-8912-E244-2D0A-351874C6F689}</FileHash>
+	<FileHash>{BFECDFF8-0C64-1D35-424E-D534EE42B87A}</FileHash>
 </ProjectInfo>

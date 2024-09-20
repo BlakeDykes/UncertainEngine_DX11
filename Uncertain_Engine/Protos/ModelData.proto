@@ -7,6 +7,6 @@ option optimize_for = LITE_RUNTIME;
 message ModelData_proto
 {
 	optional bytes	pModelName = 1;
-	optional uint32 meshCount = 3;
-	repeated MeshData_proto	meshes = 4;
+	optional uint32 meshCount = 2;
+	repeated MeshData_proto	meshes = 3;
 }

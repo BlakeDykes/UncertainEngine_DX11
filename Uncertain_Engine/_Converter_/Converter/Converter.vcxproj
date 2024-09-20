@@ -49,9 +49,13 @@
     <CodeAnalysisRuleSet>CppCoreCheckConstRules.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -63,15 +67,15 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Collections\include;$(solutionDir)..\Protos;$(SolutionDir)..\Framework;$(SolutionDir)Test;$(SolutionDir)JSON;$(SolutionDir)..\TinyGLTF;$(SolutionDir)..\ProtoBuff;$(SolutionDir)..\File\include;$(SolutionDir)..\TinyGLTF\include;$(SolutionDir)..\Shaders;$(SolutionDIr)..\Math_3.0\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Collections\include;$(solutionDir)..\Protos;$(SolutionDir)..\Framework;$(SolutionDir)Test;$(SolutionDir)JSON;$(SolutionDir)..\TinyGLTF;$(SolutionDir)..\File\include;$(SolutionDir)..\Shaders;$(SolutionDIr)..\Math_3.0\include;$(SolutionDir)..\_Engine_\include</AdditionalIncludeDirectories>
       <WarningVersion>
       </WarningVersion>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <PrecompiledHeaderOutputFile />
-      <ForcedIncludeFiles>Framework.h;</ForcedIncludeFiles>
+      <ForcedIncludeFiles>Framework.h;_Uncertain.h;</ForcedIncludeFiles>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <DisableSpecificWarnings>5266</DisableSpecificWarnings>
+      <DisableSpecificWarnings>5266; 4946; 4251;</DisableSpecificWarnings>
       <TreatWarningAsError>false</TreatWarningAsError>
       <EnablePREfast>false</EnablePREfast>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -81,9 +85,11 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\TinyGLTF;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tinygltf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)..\ProtoBuff\libs\debug\protoc.exe" -I=$(SolutionDir)..\Protos\  --cpp_out=$(SolutionDir)..\Protos\ $(SolutionDir)..\Protos\*.proto</Command>
+      <Command>"$(SolutionDir)vcpkg_installed\x86-windows\x86-windows\tools\protobuf\protoc.exe" -I=$(SolutionDir)..\Protos\  --cpp_out=$(SolutionDir)..\Protos\ $(SolutionDir)..\Protos\*.proto</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,8 +127,8 @@
     <ClCompile Include="..\..\Protos\AnimData.pb.cc" />
     <ClCompile Include="..\..\Protos\ArmatureData.cpp" />
     <ClCompile Include="..\..\Protos\ArmatureData.pb.cc" />
-    <ClCompile Include="..\..\Protos\BoundingObjectData.cpp" />
-    <ClCompile Include="..\..\Protos\BoundingObjectData.pb.cc" />
+    <ClCompile Include="..\..\Protos\BoundingData.cpp" />
+    <ClCompile Include="..\..\Protos\BoundingData.pb.cc" />
     <ClCompile Include="..\..\Protos\MeshData.cpp" />
     <ClCompile Include="..\..\Protos\MeshData.pb.cc" />
     <ClCompile Include="..\..\Protos\ModelData.cpp" />
@@ -149,8 +155,8 @@
     <ClInclude Include="..\..\Protos\AnimData.pb.h" />
     <ClInclude Include="..\..\Protos\ArmatureData.h" />
     <ClInclude Include="..\..\Protos\ArmatureData.pb.h" />
-    <ClInclude Include="..\..\Protos\BoundingObjectData.h" />
-    <ClInclude Include="..\..\Protos\BoundingObjectData.pb.h" />
+    <ClInclude Include="..\..\Protos\BoundingData.h" />
+    <ClInclude Include="..\..\Protos\BoundingData.pb.h" />
     <ClInclude Include="..\..\Protos\MeshData.h" />
     <ClInclude Include="..\..\Protos\MeshData.pb.h" />
     <ClInclude Include="..\..\Protos\ModelData.h" />
@@ -175,7 +181,7 @@
   <ItemGroup>
     <None Include="..\..\Protos\AnimData.proto" />
     <None Include="..\..\Protos\ArmatureData.proto" />
-    <None Include="..\..\Protos\BoundingObjectData.proto" />
+    <None Include="..\..\Protos\BoundingData.proto" />
     <None Include="..\..\Protos\MeshData.proto" />
     <None Include="..\..\Protos\ModelData.proto" />
     <None Include="..\..\Protos\ModelTextureData.proto" />
@@ -184,13 +190,9 @@
     <None Include="..\..\Protos\VBOData.proto" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\ProtoBuff\libs\debug\libprotobuf-lited.lib" />
-    <Library Include="..\..\ProtoBuff\libs\release\libprotobuf-lite.lib">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </Library>
-    <Library Include="..\..\TinyGLTF\libs\tinygltf.lib" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\Collections\Collections.vcxproj">
+      <Project>{77876aa3-cd2e-4f33-9cf4-a75d4e720479}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\File\File.vcxproj">
       <Project>{f98902ee-6f29-479b-9a05-b2ed999a06d6}</Project>
     </ProjectReference>

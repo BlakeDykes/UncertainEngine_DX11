@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{30BE8BC4-272A-44C6-9C7A-DC6DD36E0448}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{30BE8BC4-272A-44C6-9C7A-DC6DD36E0448}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Percussion" ID="{B9B91AF7-0DDA-41AA-AD40-6E8F1FE27E41}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Percussion_Play" ID="{B260C630-A4CD-43AD-A6EA-7C2E46DFAA77}" WorkUnitID="{A064AB68-B481-40FD-91FB-521F677F7792}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Percussion_Stop" ID="{C5C57F4A-C4B7-4EF6-8B76-C4AA53A1C5B7}" WorkUnitID="{A064AB68-B481-40FD-91FB-521F677F7792}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Modular" ID="{04DDF38A-4E5D-43FB-A5C7-0ABD193E13B2}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Modular_Stop" ID="{F1BAA6E0-1550-4E0A-99EB-879BAAA82DF2}" WorkUnitID="{A064AB68-B481-40FD-91FB-521F677F7792}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Modular_Play" ID="{556CE99D-3D70-4EE1-ADED-6BFA02FFF174}" WorkUnitID="{A064AB68-B481-40FD-91FB-521F677F7792}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

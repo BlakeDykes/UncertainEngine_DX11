@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 import "VBOData.proto";
-import "BoundingObjectData.proto";
+import "BoundingData.proto";
 
 option optimize_for = LITE_RUNTIME;
 
@@ -25,6 +25,10 @@ message MeshData_proto
 		optional VBOData_proto VBOInvBind = 3;
 	};
 
+	reserved "bounding_sphere";
+	reserved 10;
+
+
 	optional bytes						pMeshName = 1;
 	optional RENDER_MODE				mode = 2;
 	optional uint32						triCount = 3;
@@ -34,7 +38,7 @@ message MeshData_proto
 	optional VBOData_proto				vboUV = 7;
 	optional VBOData_proto				vboIndex = 8;
 	optional SkinningData				skinData = 9;
-	optional BoundingObjectData_proto	bounding_sphere = 10;
 	optional uint32						materialIndex = 11;
 	optional uint32						nodeIndex = 12;
+	optional BoundingData_proto			bounding_object = 13;
 }

@@ -131,6 +131,12 @@
       <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
+    <Filter Include="src\Proto">
+      <UniqueIdentifier>{5aa94a6b-5aa3-47ea-b590-22eebbeebf3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protos">
+      <UniqueIdentifier>{7e2d24d7-832a-4e44-91c0-f4eebfeac944}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Win32\AkDefaultIOHookDeferred.cpp">
@@ -405,6 +411,63 @@
     </ClCompile>
     <ClCompile Include="..\src\Shader\ShaderObjects\Audio\SO_SpectrumLight.cpp">
       <Filter>src\Shader\ShaderObjects\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Proto\ProtoData_Wrapper.cpp">
+      <Filter>src\Proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\AnimData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\AnimData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\ArmatureData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\ArmatureData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\BoundingObjectData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\BoundingObjectData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\MeshData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\MeshData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\ModelData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\ModelData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\ModelTextureData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\ModelTextureData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\SpriteSheetData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\SpriteSheetData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\TextureData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\TextureData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\VBOData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\VBOData.pb.cc">
+      <Filter>Protos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -759,6 +822,66 @@
     <ClInclude Include="..\include\resource.h">
       <Filter>resource</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\Proto\ProtoData_Wrapper.h">
+      <Filter>src\Proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\AnimData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\AnimData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\ArmatureData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\ArmatureData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\BoundingObjectData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\BoundingObjectData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\MeshData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\MeshData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\ModelData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\ModelData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\ModelTextureData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\ModelTextureData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\SpriteSheetData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\SpriteSheetData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\stb_image.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\TextureData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\TextureData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\VBOData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\VBOData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\include\DirectXTex_X86Debug.lib">
@@ -768,6 +891,33 @@
   <ItemGroup>
     <None Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIO.inl">
       <Filter>include\Wwise\AKSamples\SoundEngine\Common</Filter>
+    </None>
+    <None Include="..\..\Protos\AnimData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\ArmatureData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\BoundingObjectData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\MeshData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\ModelData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\ModelTextureData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\SpriteSheetData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\TextureData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\VBOData.proto">
+      <Filter>Protos</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

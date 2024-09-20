@@ -4,7 +4,7 @@
 #include "MeshData.h"
 #include "ModelData.h"
 #include "ModelTextureData.h"
-#include "BoundingObjectData.h"
+#include "BoundingData.h"
 #include "AnimData.h"
 #include "ArmatureData.h"
 #include "Converter_AnimData.h"
@@ -791,7 +791,7 @@ void GLTF_Wrapper::GetJointDepth(Model& gltfModel, Node* root, unsigned int dept
 	}
 }
 
-bool GLTF_Wrapper::SetBounding(const VBOData& vertVBO, BoundingObjectData*& boundingOut)
+bool GLTF_Wrapper::SetBounding(const VBOData& vertVBO, BoundingData*& boundingOut)
 {
 
 	Vec3 *vertBuff = new Vec3[vertVBO.Count]();
@@ -803,7 +803,7 @@ bool GLTF_Wrapper::SetBounding(const VBOData& vertVBO, BoundingObjectData*& boun
 		pVert += 3;
 	}
 	
-	boundingOut = new BoundingObjectData(vertBuff, vertVBO.Count);
+	boundingOut = new BoundingData(vertBuff, vertVBO.Count);
 
 	delete[] vertBuff;
 
@@ -1247,7 +1247,7 @@ ReverseHierarchy::ReverseHierarchy(const ReverseHierarchy& b)
 
 unsigned int ReverseHierarchy::Add(tinygltf::Skin* pSkin, unsigned int nodeIndex)
 {
-	std::vector<int>::iterator it = find(pSkin->joints.begin(), pSkin->joints.end(), nodeIndex);
+	auto it = std::find(pSkin->joints.begin(), pSkin->joints.end(), (int)nodeIndex);
 	if (it != pSkin->joints.end())
 	{
 		assert(NextOpen < JointDepth);

@@ -21,4 +21,7 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\tiny_gltf.cc" />
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="$(MSBuildThisFileDirectory)..\tinygltf.lib" />
+  </ItemGroup>
 </Project>

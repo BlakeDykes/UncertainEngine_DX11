@@ -10,7 +10,7 @@ class TextureData;
 class ModelTextureData;
 class MeshData;
 class ModelData;
-class BoundingObjectData;
+class BoundingData;
 class ArmatureData;
 
 using namespace tinygltf;
@@ -218,7 +218,7 @@ public:
 	static bool SetVBO(Model& gltfModel, unsigned int accessorIndex, VBOData& vboOut, unsigned char*& pBinaryBuffer);
 	static void GetJointDepth(Model& gltfModel, Node* root, unsigned int depth, unsigned int& maxDepthOut);
 	static void GenerateJointHierarchy(Model& gltfModel, ArmatureData& armOut, tinygltf::Skin* pSkin, ReverseHierarchy& hierarchy, unsigned int nodeIndex);
-	static bool SetBounding(const VBOData& vertVBO, BoundingObjectData*& boundingOut);
+	static bool SetBounding(const VBOData& vertVBO, BoundingData*& boundingOut);
 	static bool SetAnimation(Model& gltfModel, unsigned int animationIndex, AnimData& animOut, unsigned char*& pBinaryBuffer, AnimData::TYPE animType);
 
 	static void Print(GLB_Header& header);

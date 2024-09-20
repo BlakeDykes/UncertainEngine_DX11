@@ -16,7 +16,7 @@ message AnimData_proto
 		optional float x = 1;
 		optional float y = 2;
 		optional float z = 3;
-	}
+	};
 
 	message Rotation
 	{
@@ -24,27 +24,27 @@ message AnimData_proto
 		optional float y = 2;
 		optional float z = 3;
 		optional float w = 4;
-	}
+	};
 
 	message Scale
 	{
 		optional float x = 1;
 		optional float y = 2;
 		optional float z = 3;
-	}
+	};
 
 	message Bone
 	{
 		optional Translation 	trans = 1;
 		optional Rotation		rot = 2;
 		optional Scale			scale = 3;
-	}
+	};
 
 	message Frame
 	{
 		optional float time = 1;
 		repeated Bone  bones = 2;
-	}
+	};
 
 	message Node
 	{
@@ -55,12 +55,12 @@ message AnimData_proto
 		optional Translation	t = 5;
 		optional Rotation		r =  6;
 		optional Scale			s = 7;
-	}
+	};
 
 	optional bytes		name = 1;
 	optional TYPE		animType = 2;
 	optional uint32		frameCount = 3;
-	optional uint32		jointCount = 5;
-	repeated Node		joints = 6;
-	repeated Frame		frames = 7;
+	optional uint32		jointCount = 4;
+	repeated Node		joints = 5;
+	repeated Frame		frames = 6;
 }

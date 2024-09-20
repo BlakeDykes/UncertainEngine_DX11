@@ -11,12 +11,6 @@
     <Filter Include="_libs">
       <UniqueIdentifier>{d856f8fb-7ded-4e48-b700-d750751ea3bf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="_libs\_TinyGLTF">
-      <UniqueIdentifier>{b08bed67-5f13-4095-b4e5-c1739f6bb48a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="_libs\_Proto">
-      <UniqueIdentifier>{e76fb869-a3da-4478-8d9b-1cb0c7392c1c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\GLTF">
       <UniqueIdentifier>{d9de101c-836a-4e0b-a5aa-78eeeb0b9533}</UniqueIdentifier>
     </Filter>
@@ -67,9 +61,6 @@
     <ClCompile Include="..\..\Protos\AnimData.pb.cc">
       <Filter>Protos</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Protos\BoundingObjectData.cpp">
-      <Filter>Protos</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Protos\MeshData.cpp">
       <Filter>Protos</Filter>
     </ClCompile>
@@ -94,9 +85,6 @@
     <ClCompile Include="..\..\Protos\VBOData.pb.cc">
       <Filter>Protos</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Protos\BoundingObjectData.pb.cc">
-      <Filter>Protos</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Protos\SpriteSheetData.cpp">
       <Filter>Protos</Filter>
     </ClCompile>
@@ -115,12 +103,15 @@
     <ClCompile Include="..\..\Protos\ArmatureData.pb.cc">
       <Filter>Protos</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Protos\BoundingData.cpp">
+      <Filter>Protos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Protos\BoundingData.pb.cc">
+      <Filter>Protos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Protos\AnimData.proto">
-      <Filter>Protos</Filter>
-    </None>
-    <None Include="..\..\Protos\BoundingObjectData.proto">
       <Filter>Protos</Filter>
     </None>
     <None Include="..\..\Protos\MeshData.proto">
@@ -142,6 +133,9 @@
       <Filter>Protos</Filter>
     </None>
     <None Include="..\..\Protos\ArmatureData.proto">
+      <Filter>Protos</Filter>
+    </None>
+    <None Include="..\..\Protos\BoundingData.proto">
       <Filter>Protos</Filter>
     </None>
   </ItemGroup>
@@ -185,9 +179,6 @@
     <ClInclude Include="..\..\Protos\AnimData.pb.h">
       <Filter>Protos</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Protos\BoundingObjectData.h">
-      <Filter>Protos</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Protos\MeshData.h">
       <Filter>Protos</Filter>
     </ClInclude>
@@ -212,9 +203,6 @@
     <ClInclude Include="..\..\Protos\VBOData.pb.h">
       <Filter>Protos</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Protos\BoundingObjectData.pb.h">
-      <Filter>Protos</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Protos\SpriteSheetData.h">
       <Filter>Protos</Filter>
     </ClInclude>
@@ -233,16 +221,11 @@
     <ClInclude Include="..\..\Protos\ArmatureData.pb.h">
       <Filter>Protos</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\TinyGLTF\libs\tinygltf.lib">
-      <Filter>_libs\_TinyGLTF</Filter>
-    </Library>
-    <Library Include="..\..\ProtoBuff\libs\release\libprotobuf-lite.lib">
-      <Filter>_libs\_Proto</Filter>
-    </Library>
-    <Library Include="..\..\ProtoBuff\libs\debug\libprotobuf-lited.lib">
-      <Filter>_libs\_Proto</Filter>
-    </Library>
+    <ClInclude Include="..\..\Protos\BoundingData.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Protos\BoundingData.pb.h">
+      <Filter>Protos</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
