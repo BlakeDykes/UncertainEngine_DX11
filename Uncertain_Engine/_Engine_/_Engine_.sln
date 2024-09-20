@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pugixml_vs2022_static", "..
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpectralAnalysisFX", "..\Wwise\SpectralAnalysis\SoundEnginePlugin\SpectralAnalysis_Windows_vc170_static.vcxproj", "{7F95DA09-3288-23AE-A79A-71779D883321}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProtoBuff", "..\ProtoBuff\ProtoBuff.vcxitems", "{978E63F0-9D27-4D47-880B-75C826B3032A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug(StaticCRT)|x86 = Debug(StaticCRT)|x86

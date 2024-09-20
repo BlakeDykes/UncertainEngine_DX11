@@ -1,5 +1,5 @@
 #include "MeshData.h"
-
+#include "BoundingData.h"
 
 MeshData::MeshData()
 	:pMeshName{ 0 }, RenderMode{ MeshData::RENDER_MODE::DEFAULT },
@@ -72,9 +72,8 @@ void MeshData::Serialize(MeshData_proto& out) const
 		pSkinData->set_allocated_vboinvbind(pVBO);
 	}
 
-	BoundingObjectData_proto* pBounding = new BoundingObjectData_proto();
+	BoundingData_proto* pBounding = out.mutable_bounding_object();
 	this->poBounding->Serialize(*pBounding);
-	out.set_allocated_bounding_sphere(pBounding);
 }
 
 void MeshData::Deserialize(MeshData_proto& in)
@@ -115,7 +114,7 @@ void MeshData::Deserialize(MeshData_proto& in)
 		pVert += 3;
 	}
 
-	this->poBounding = new BoundingObjectData(vertBuff, VBOVert.Count);
+	this->poBounding = new BoundingData(vertBuff, VBOVert.Count);
 
 	delete[] vertBuff;
 

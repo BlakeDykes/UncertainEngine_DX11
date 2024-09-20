@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+message BoundingData_proto
+{
+	enum TYPE
+	{
+		TYPE_UNSPECIFIED = 0;
+		TYPE_RECT = 1;
+		TYPE_SPHERE = 2;
+	};
+
+	optional TYPE bounding_object_type			= 1;
+	optional float center_x						= 2;
+	optional float center_y						= 3;
+	optional float center_z						= 4;
+	optional float aspectRatio					= 5;
+	optional float radius						= 6;
+}

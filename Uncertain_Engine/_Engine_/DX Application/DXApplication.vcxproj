@@ -79,7 +79,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BOOSTER;PROFILE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";USE_THREAD_FRAMEWORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Time\include;$(SolutionDir)..\Math_3.0\include;$(SolutionDir)..\Framework;$(SolutionDir)dist\File\include;$(SolutionDir)..\Thread\include;$(SolutionDir)..\Collections\include;$(SolutionDir)..\Protos;$(SolutionDir)..\Wwise\include;$(SolutionDir)..\..\Wwise\WwiseDemo;$(SolutionDir)..\Pugixml\src;$(SolutionDir)..\File\include;$(SolutionDir)include;$(SolutionDir)resource;$(SolutionDir)src;$(SolutionDir)src\Audio;$(SolutionDir)..\Wwise\SpectralAnalysis;$(SolutionDir)..\Wwise\SpectralAnalysis\SoundEnginePlugin;$(SolutionDir)include\Wwise;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Time\include;$(SolutionDir)..\Math_3.0\include;$(SolutionDir)..\Framework;$(SolutionDir)dist\File\include;$(SolutionDir)..\Thread\include;$(SolutionDir)..\Collections\include;$(SolutionDir)..\Protos;$(SolutionDir)..\Wwise\include;$(SolutionDir)..\..\Wwise\WwiseDemo;$(SolutionDir)..\Pugixml\src;$(SolutionDir)..\File\include;$(SolutionDir)include;$(SolutionDir)resource;$(SolutionDir)src;$(SolutionDir)src\Audio;$(SolutionDir)..\Wwise\SpectralAnalysis;$(SolutionDir)..\Wwise\SpectralAnalysis\SoundEnginePlugin;$(SolutionDir)include\Wwise;$(SolutionDir)..\ProtoBuff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BrowseInformation>true</BrowseInformation>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ForcedIncludeFiles>Framework.h;ThreadFramework.h;_Uncertain.h;EngineNames.h; _def_SA.h</ForcedIncludeFiles>
@@ -210,6 +210,24 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Protos\AnimData.cpp" />
+    <ClCompile Include="..\..\Protos\AnimData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ArmatureData.cpp" />
+    <ClCompile Include="..\..\Protos\ArmatureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\BoundingObjectData.cpp" />
+    <ClCompile Include="..\..\Protos\BoundingObjectData.pb.cc" />
+    <ClCompile Include="..\..\Protos\MeshData.cpp" />
+    <ClCompile Include="..\..\Protos\MeshData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ModelData.cpp" />
+    <ClCompile Include="..\..\Protos\ModelData.pb.cc" />
+    <ClCompile Include="..\..\Protos\ModelTextureData.cpp" />
+    <ClCompile Include="..\..\Protos\ModelTextureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\SpriteSheetData.cpp" />
+    <ClCompile Include="..\..\Protos\SpriteSheetData.pb.cc" />
+    <ClCompile Include="..\..\Protos\TextureData.cpp" />
+    <ClCompile Include="..\..\Protos\TextureData.pb.cc" />
+    <ClCompile Include="..\..\Protos\VBOData.cpp" />
+    <ClCompile Include="..\..\Protos\VBOData.pb.cc" />
     <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.cpp" />
     <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFileLocationBase.cpp" />
     <ClCompile Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackage.cpp" />
@@ -272,6 +290,7 @@
     <ClCompile Include="..\src\Model\Models\Model_Skybox.cpp" />
     <ClCompile Include="..\src\Model\Models\Model_Terrain.cpp" />
     <ClCompile Include="..\src\Model\ModelTools.cpp" />
+    <ClCompile Include="..\src\Proto\ProtoData_Wrapper.cpp" />
     <ClCompile Include="..\src\Reflection\ReflectionManager.cpp" />
     <ClCompile Include="..\src\Reflection\ReflectionPlane.cpp" />
     <ClCompile Include="..\src\Shader\CBuffer\CBuffers.cpp" />
@@ -306,6 +325,25 @@
     <ClInclude Include="..\..\Framework\Framework.h" />
     <ClInclude Include="..\..\Framework\ProjectSettings.h" />
     <ClInclude Include="..\..\Framework\ThreadFramework.h" />
+    <ClInclude Include="..\..\Protos\AnimData.h" />
+    <ClInclude Include="..\..\Protos\AnimData.pb.h" />
+    <ClInclude Include="..\..\Protos\ArmatureData.h" />
+    <ClInclude Include="..\..\Protos\ArmatureData.pb.h" />
+    <ClInclude Include="..\..\Protos\BoundingObjectData.h" />
+    <ClInclude Include="..\..\Protos\BoundingObjectData.pb.h" />
+    <ClInclude Include="..\..\Protos\MeshData.h" />
+    <ClInclude Include="..\..\Protos\MeshData.pb.h" />
+    <ClInclude Include="..\..\Protos\ModelData.h" />
+    <ClInclude Include="..\..\Protos\ModelData.pb.h" />
+    <ClInclude Include="..\..\Protos\ModelTextureData.h" />
+    <ClInclude Include="..\..\Protos\ModelTextureData.pb.h" />
+    <ClInclude Include="..\..\Protos\SpriteSheetData.h" />
+    <ClInclude Include="..\..\Protos\SpriteSheetData.pb.h" />
+    <ClInclude Include="..\..\Protos\stb_image.h" />
+    <ClInclude Include="..\..\Protos\TextureData.h" />
+    <ClInclude Include="..\..\Protos\TextureData.pb.h" />
+    <ClInclude Include="..\..\Protos\VBOData.h" />
+    <ClInclude Include="..\..\Protos\VBOData.pb.h" />
     <ClInclude Include="..\include\DirectXTex.h" />
     <ClInclude Include="..\include\EngineNames.h" />
     <ClInclude Include="..\include\resource.h" />
@@ -386,6 +424,7 @@
     <ClInclude Include="..\src\Model\Models\Model_Terrain.h" />
     <ClInclude Include="..\src\Model\Models\_ModelWrapper.h" />
     <ClInclude Include="..\src\Model\ModelTools.h" />
+    <ClInclude Include="..\src\Proto\ProtoData_Wrapper.h" />
     <ClInclude Include="..\src\Reflection\ReflectionManager.h" />
     <ClInclude Include="..\src\Reflection\ReflectionPlane.h" />
     <ClInclude Include="..\src\Shader\CBuffer\CBuffers.h" />
@@ -448,6 +487,15 @@
     <Library Include="..\include\DirectXTex_X86Debug.lib" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Protos\AnimData.proto" />
+    <None Include="..\..\Protos\ArmatureData.proto" />
+    <None Include="..\..\Protos\BoundingObjectData.proto" />
+    <None Include="..\..\Protos\MeshData.proto" />
+    <None Include="..\..\Protos\ModelData.proto" />
+    <None Include="..\..\Protos\ModelTextureData.proto" />
+    <None Include="..\..\Protos\SpriteSheetData.proto" />
+    <None Include="..\..\Protos\TextureData.proto" />
+    <None Include="..\..\Protos\VBOData.proto" />
     <None Include="..\include\Wwise\AKSamples\SoundEngine\Common\AkFilePackageLowLevelIO.inl" />
   </ItemGroup>
   <ItemGroup>

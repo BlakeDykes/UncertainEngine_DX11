@@ -8,6 +8,7 @@
 #include "File.h"
 #include "AnimData.h"
 #include "SpriteSheetData.h"
+#include <google/protobuf/stubs/common.h>
 
 using namespace tinygltf;
 using namespace Uncertain;

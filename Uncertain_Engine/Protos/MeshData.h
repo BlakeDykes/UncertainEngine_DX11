@@ -1,9 +1,9 @@
-#ifndef MESH_DATA_H
-#define MESH_DATA_H
+#pragma once
 
 #include "VBOData.h"
-#include "BoundingObjectData.h"
 #include "MeshData.pb.h"
+
+class BoundingData;
 
 class MeshData
 {
@@ -50,10 +50,8 @@ public:
 
 	SkinningData* poSkinData;
 
-	BoundingObjectData* poBounding;
+	BoundingData* poBounding;
 	unsigned int MaterialIndex;
 	unsigned int NodeIndex;
 
 };
-
-#endif // !MESH_DATA_H

@@ -12,8 +12,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "File", "..\File\File.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "..\Math_3.0\Math.vcxproj", "{D999076E-F08B-48FC-B732-E43E13041A07}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProtoBuff", "..\ProtoBuff\ProtoBuff.vcxitems", "{978E63F0-9D27-4D47-880B-75C826B3032A}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Collections", "..\Collections\Collections.vcxproj", "{77876AA3-CD2E-4F33-9CF4-A75D4E720479}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TinyGLTF", "..\TinyGLTF\TinyGLTF\TinyGLTF.vcxitems", "{3A1C0C7C-3CAC-4CD5-B070-0D2E1FE6B22D}"
@@ -49,7 +47,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\TinyGLTF\TinyGLTF\TinyGLTF.vcxitems*{3a1c0c7c-3cac-4cd5-b070-0d2e1fe6b22d}*SharedItemsImports = 9
-		..\ProtoBuff\ProtoBuff.vcxitems*{978e63f0-9d27-4d47-880b-75c826b3032a}*SharedItemsImports = 9
 		..\ProtoBuff\ProtoBuff.vcxitems*{ed602e5d-031c-4af8-b6a6-4b34e0073b27}*SharedItemsImports = 4
 		..\TinyGLTF\TinyGLTF.vcxitems*{ed602e5d-031c-4af8-b6a6-4b34e0073b27}*SharedItemsImports = 4
 	EndGlobalSection

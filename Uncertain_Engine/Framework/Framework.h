@@ -249,6 +249,7 @@
 #pragma warning( disable : 4200 ) // nonstandard extension used : zero-sized array in struct/union
 #pragma warning( disable : 5246 ) // the initialization of a subobject should be wrapped in braces
 #pragma warning( disable : 4365 ) // signed/unsigned conversion -- protobuffs :o
+#pragma warning( disable : 5266 ) // 'action' : conversion from 'type_1' to 'type_2', signed/unsigned mismatch -- protobuffs :o
 
 #include "ProjectSettings.h"
 
